@@ -1,0 +1,33 @@
+html,body{
+margin:0px;
+padding:0px;
+height:100%;
+}
+
+#home{
+	height:100%;
+	background: url("bg_home.jpg") no-repeat;
+	background-size:100% 100%;
+	section{
+		padding-top: 22%;
+		h1.logo{
+			margin:auto;
+			color: transparent;
+			background: url("logo-dot.png") no-repeat;
+			background-size: 100%;
+			height: 57px;
+			width: 131px;
+		}
+		h2{
+			margin:auto;
+			margin-top: 35px;
+			width: 400px;
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 30px;
+			font-family: ubuntu;
+			font-weight: 300;
+			b{font-weight: 400;}
+		}
+	}
+}
