@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   root 'site#index'
+  get 'que_hacemos' => 'site#que_hacemos'
+  get 'equipo' => 'site#equipo'
+  get 'portfolio' => 'site#portfolio'
+  get 'contacto' => 'site#contacto'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
