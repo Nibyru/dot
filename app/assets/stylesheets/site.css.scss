@@ -41,11 +41,15 @@
 .icon-twitter:before{content:"\e60f";}
 
 
+*{
+	font-family: Lato;
+	list-style:none !important;
+}
+
 html,body{
-margin:0px;
-padding:0px;
-height:100%;
-font-family: Lato;
+	margin:0px;
+	padding:0px;
+	height:100%;
 }
 
 
@@ -86,17 +90,196 @@ font-family: Lato;
 }
 
 
+
 #quehacemos{
 	height:100%;
 	background: url("bg.jpg") no-repeat;
 	background-size:100% 100%;
+	h2{
+		padding-top:50px;
+		margin:0;
+		text-align: center;
+		color: #888888;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-family: Lato;
+		font-weight: 300;
+		b{font-weight: 400;}
+	}
+	ul.servicios{
+		margin:auto;
+		margin-top: 10%;
+		width: 1020px;
+		li{
+			display: inline-block;
+			width: 33%;
+			text-align: center;
+			padding-top: 60px;
+			padding-bottom: 20px;
+			h3{
+				font-family: Lato;
+				font-size: 24px;
+				text-transform: uppercase;
+				color: #555555;
+				font-weight: 400;
+				b{font-weight: 700;}
+			}
+			p{
+				font-family: Lato;
+				font-size: 17px;
+				color: #666666;
+				font-weight: 300;
+				width: 240px;
+				margin: auto;
+			}
+		}
+	}
+	ul.iconos-quehacemos{
+		position:absolute;
+		bottom:30px;
+		width: 100%;
+		text-align: center;
+		padding:0;
+		li{
+			display:inline-block;
+			padding:10px;
+			vertical-align: middle;
+		}
+	}
 }
+
+
+
 
 #equipo{
 	height:100%;
 	background: url("bg.jpg") no-repeat;
 	background-size:100% 100%;
+	h2{
+		padding-top:50px;
+		margin:0;
+		text-align: center;
+		color: #888888;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-family: Lato;
+		font-weight: 300;
+		b{font-weight: 400;}
+	}
+	ul.nosotros{
+		width: 630px;
+		height: 650px;
+		position: relative;
+		margin: auto;
+		text-align: center;
+		top: 15px;
+		li{
+			position:absolute;
+			width: 188px;
+			height: 188px;
+			border-radius: 100%;
+			
+			.info{
+				display: none;
+				position: absolute;
+				background: rgba(0, 0, 0, 0.6);
+				color: #fff;
+				width: 174px;
+				height: 174px;
+				border-radius: 100%;
+				left: 7px;
+				bottom: 7px;
+				-webkit-animation: cssAnimation 0.5s ease;
+				b{
+					display: block;
+					text-transform: uppercase;
+					font-size: 17px;
+					margin: auto;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+					padding-top: 50px;
+					padding-bottom: 15px;
+					width: 120px;
+					font-weight: 700;
+				}
+				i{
+					display: block;
+					font-size: 17px;
+					margin-top: 13px;
+					font-weight: 400;
+				}
+			}
+		}
+		li:hover .info{display: block;}
+
+		li.adrian{
+			top: 55px;
+			left: 245px;
+			.skill-adrian{
+				-webkit-animation: cssAnimation 1s ease;
+				display: none;
+				text-align: center;
+				width: 100%;
+				position: absolute;
+				top: -50px;
+				img{margin:0 3px;}
+			}
+		}
+		li.ramiro{
+			top: 230px;
+			left: 70px;
+			.skill-ramiro{
+				-webkit-animation: cssAnimation 1s ease;
+				display: none;
+				text-align: center;
+				width: 41px;
+				position: absolute;
+				left: -65px;
+				top: 10px;
+				img{display: block;margin: 10px auto;}
+			}
+		}
+		li.sebas{
+			top: 230px;
+			right: 65px;
+			.skill-sebas{
+				-webkit-animation: cssAnimation 1s ease;
+				display: none;
+				text-align: center;
+				width: 41px;
+				position: absolute;
+				right: -65px;
+				top: 10px;
+				img{display: block;margin: 10px auto;}
+			}
+		}
+		li.maxi{
+			bottom: 55px;
+			left: 245px;
+			.skill-maxi{
+				-webkit-animation: cssAnimation 1s ease;
+				display: none;
+				text-align: center;
+				width: 100%;
+				position: absolute;
+				bottom: -50px;
+				img{margin:0 3px;}
+			}
+		}
+
+		li.adrian:hover .skill-adrian{display: inline-block;}
+		li.ramiro:hover .skill-ramiro{display: block;}
+		li.sebas:hover .skill-sebas{display: block;}
+		li.maxi:hover .skill-maxi{display: inline-block;}
+
+	}
 }
+
+@-webkit-keyframes cssAnimation {
+	from { -webkit-transform:scale(0); }
+	to { -webkit-transform: scale(1); }
+}
+
+
 
 #contacto{
 	height:100%;
