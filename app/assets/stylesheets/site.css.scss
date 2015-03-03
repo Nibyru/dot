@@ -58,6 +58,7 @@ html,body{
 	height:100%;
 	background: url("bg_home.jpg") no-repeat;
 	background-size:100% 100%;
+	margin-left: 85px;
 	section{
 		padding-top: 20%;
 		h1.logo{
@@ -80,10 +81,12 @@ html,body{
 			b{font-weight: 400;}
 		}
 		.scroll{
-			position:absolute;
-			bottom:30px;
-			width: 100%;
+			position: absolute;
+			bottom: 30px;
 			text-align: center;
+			left: 0;
+			right: 0;
+			margin-left: 85px;
 		}
 	}
 	
@@ -95,6 +98,7 @@ html,body{
 	height:100%;
 	background: url("bg.jpg") no-repeat;
 	background-size:100% 100%;
+	margin-left: 85px;
 	h2{
 		padding-top:50px;
 		margin:0;
@@ -135,11 +139,12 @@ html,body{
 		}
 	}
 	ul.iconos-quehacemos{
-		position:absolute;
-		bottom:30px;
-		width: 100%;
+		position: absolute;
+		bottom: 30px;
 		text-align: center;
-		padding:0;
+		left: 0;
+		right: 0;
+		margin-left: 85px;
 		li{
 			display:inline-block;
 			padding:10px;
@@ -155,6 +160,7 @@ html,body{
 	height:100%;
 	background: url("bg.jpg") no-repeat;
 	background-size:100% 100%;
+	margin-left: 85px;
 	h2{
 		padding-top:50px;
 		margin:0;
@@ -284,4 +290,5 @@ html,body{
 #contacto{
 	height:100%;
 	background: #212630;
+	margin-left: 85px;
 }
