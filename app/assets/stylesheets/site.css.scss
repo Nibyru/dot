@@ -53,51 +53,50 @@ html,body{
 }
 
 
+.red-bg   { background: url("bg_home.jpg") no-repeat; }
+.white-bg { background: url("bg.jpg") no-repeat; }
+
+.red-bg, .white-bg{
+	background-size:100% 100%;
+}
 
 #home{
 	height:100%;
-	background: url("bg_home.jpg") no-repeat;
-	background-size:100% 100%;
 	margin-left: 85px;
-	section{
-		padding-top: 20%;
-		h1.logo{
-			margin:auto;
-			color: transparent;
-			background: url("logo-dot.png") no-repeat;
-			background-size: 100%;
-			height: 57px;
-			width: 131px;
-		}
-		h2{
-			margin:auto;
-			margin-top: 35px;
-			width: 400px;
-			text-align: center;
-			color: #FFFFFF;
-			font-size: 30px;
-			font-family: ubuntu;
-			font-weight: 300;
-			b{font-weight: 400;}
-		}
-		.scroll{
-			position: absolute;
-			bottom: 30px;
-			text-align: center;
-			left: 0;
-			right: 0;
-			margin-left: 85px;
-		}
+	padding-top: 20%;
+	h1.logo{
+		margin:auto;
+		color: transparent;
+		background: url("logo-dot.png") no-repeat;
+		background-size: 100%;
+		height: 57px;
+		width: 131px;
 	}
-	
+	h2{
+		margin:auto;
+		margin-top: 35px;
+		width: 400px;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 30px;
+		font-family: ubuntu;
+		font-weight: 300;
+		b{font-weight: 400;}
+	}
+	.scroll{
+		position: absolute;
+		bottom: 30px;
+		text-align: center;
+		left: 0;
+		right: 0;
+		margin-left: 85px;
+	}
 }
 
 
 
 #quehacemos{
 	height:100%;
-	background: url("bg.jpg") no-repeat;
-	background-size:100% 100%;
 	margin-left: 85px;
 	h2{
 		padding-top:50px;
@@ -158,8 +157,6 @@ html,body{
 
 #equipo{
 	height:100%;
-	background: url("bg.jpg") no-repeat;
-	background-size:100% 100%;
 	margin-left: 85px;
 	h2{
 		padding-top:50px;
