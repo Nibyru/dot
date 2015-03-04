@@ -44,6 +44,7 @@
 *{
 	font-family: Lato;
 	list-style:none !important;
+	text-decoration:none;
 }
 
 html,body{
@@ -62,7 +63,6 @@ html,body{
 
 #home{
 	height:100%;
-	margin-left: 85px;
 	padding-top: 20%;
 	h1.logo{
 		margin:auto;
@@ -89,7 +89,6 @@ html,body{
 		text-align: center;
 		left: 0;
 		right: 0;
-		margin-left: 85px;
 	}
 }
 
@@ -97,7 +96,6 @@ html,body{
 
 #quehacemos{
 	height:100%;
-	margin-left: 85px;
 	h2{
 		padding-top:50px;
 		margin:0;
@@ -105,7 +103,6 @@ html,body{
 		color: #888888;
 		text-transform: uppercase;
 		font-size: 30px;
-		font-family: Lato;
 		font-weight: 300;
 		b{font-weight: 400;}
 	}
@@ -120,7 +117,6 @@ html,body{
 			padding-top: 60px;
 			padding-bottom: 20px;
 			h3{
-				font-family: Lato;
 				font-size: 24px;
 				text-transform: uppercase;
 				color: #555555;
@@ -128,7 +124,6 @@ html,body{
 				b{font-weight: 700;}
 			}
 			p{
-				font-family: Lato;
 				font-size: 17px;
 				color: #666666;
 				font-weight: 300;
@@ -143,7 +138,6 @@ html,body{
 		text-align: center;
 		left: 0;
 		right: 0;
-		margin-left: 85px;
 		li{
 			display:inline-block;
 			padding:10px;
@@ -157,7 +151,6 @@ html,body{
 
 #equipo{
 	height:100%;
-	margin-left: 85px;
 	h2{
 		padding-top:50px;
 		margin:0;
@@ -165,7 +158,6 @@ html,body{
 		color: #888888;
 		text-transform: uppercase;
 		font-size: 30px;
-		font-family: Lato;
 		font-weight: 300;
 		b{font-weight: 400;}
 	}
@@ -287,5 +279,85 @@ html,body{
 #contacto{
 	height:100%;
 	background: #212630;
-	margin-left: 85px;
+	text-align:center;
+	h2{
+		padding-top:50px;
+		margin:0;
+		text-align: center;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	.formulario{
+		display: inline-block;
+		height: 510px;
+		border-right:1px solid #272d39;
+		width: 370px;
+		padding-right: 45px;
+		margin-top: 90px;
+		form{
+			width: 370px;
+			input,textarea{
+				display: block;
+				border: none;
+				background: #161A25;
+				margin-bottom: 20px;
+			}
+			input{
+				width: 100%;
+				height: 42px;
+			}
+			textarea{
+				width: 99%;
+				height: 180px;
+				resize: none;
+			}
+			input[type="submit"]{
+				background:#E73D3E;
+				font-weight: 700;
+				font-size: 12px;
+				color: #862120;
+			}
+		}
+		.msj-enviado{
+			display: none;
+			color:#757C99;
+			font-size: 15px;
+			span{
+				display: block;
+				font-size: 45px;
+				margin-bottom: 15px;
+			}
+			b{font-weight:700;text-transform: uppercase;}
+			p{font-weight:300;margin-top: 8px;}
+		}
+	}
+	.datos{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		padding-left: 45px;
+		width: 260px;
+		margin-top: 90px;
+		p{
+			font-size: 15px;
+			color: #C0C0C0;
+			margin: 0;
+			line-height: 28px;
+			font-weight: 300;
+			b{font-weight:700;} 
+		}
+		.iconos-sociales{
+			margin-left: -10px;
+			margin-top: 30px;
+			span{
+				margin-right: 5px;
+				display: inline-block;
+				color: #1D1F26;
+				font-size: 30px;
+				&:hover{color:#757C99;}
+			}
+		}
+	}
 }
