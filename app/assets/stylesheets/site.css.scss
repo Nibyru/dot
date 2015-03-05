@@ -210,8 +210,8 @@ html,body{
 			top: 55px;
 			left: 245px;
 			.skill-adrian{
-				-webkit-animation: cssAnimation 1s ease;
-				display: none;
+				transition:All 0.5s ease;
+				opacity: 0;
 				text-align: center;
 				width: 100%;
 				position: absolute;
@@ -223,8 +223,8 @@ html,body{
 			top: 230px;
 			left: 70px;
 			.skill-ramiro{
-				-webkit-animation: cssAnimation 1s ease;
-				display: none;
+				transition:All 0.5s ease;
+				opacity: 0;
 				text-align: center;
 				width: 41px;
 				position: absolute;
@@ -237,8 +237,8 @@ html,body{
 			top: 230px;
 			right: 65px;
 			.skill-sebas{
-				-webkit-animation: cssAnimation 1s ease;
-				display: none;
+				transition:All 0.5s ease;
+				opacity: 0;
 				text-align: center;
 				width: 41px;
 				position: absolute;
@@ -251,8 +251,8 @@ html,body{
 			bottom: 55px;
 			left: 245px;
 			.skill-maxi{
-				-webkit-animation: cssAnimation 1s ease;
-				display: none;
+				transition:All 0.5s ease;
+				opacity: 0;
 				text-align: center;
 				width: 100%;
 				position: absolute;
@@ -261,10 +261,10 @@ html,body{
 			}
 		}
 
-		li.adrian:hover .skill-adrian{display: inline-block;}
-		li.ramiro:hover .skill-ramiro{display: block;}
-		li.sebas:hover .skill-sebas{display: block;}
-		li.maxi:hover .skill-maxi{display: inline-block;}
+		li.adrian:hover .skill-adrian{opacity:1;}
+		li.ramiro:hover .skill-ramiro{opacity:1;}
+		li.sebas:hover .skill-sebas{opacity:1;}
+		li.maxi:hover .skill-maxi{opacity:1;}
 
 	}
 }
@@ -298,26 +298,47 @@ html,body{
 		margin-top: 90px;
 		form{
 			width: 370px;
-			input,textarea{
-				display: block;
-				border: none;
-				background: #161A25;
-				margin-bottom: 20px;
-			}
-			input{
-				width: 100%;
-				height: 42px;
-			}
-			textarea{
-				width: 99%;
-				height: 180px;
-				resize: none;
+			.campo{
+				position: relative;
+				margin-bottom:20px;
+				span{
+					position: absolute;
+					font-size: 26px;
+					top: 10px;
+					left: 16px;
+					color: #3A3E4D;
+				}
+				.icon-form_nombre, .icon-form_mail{
+					font-size:20px;
+					top: 12px;
+				}
+				input,textarea{
+					width: 370px;
+					height: 42px;
+					background: #161A25;
+					border: 1px solid #161A25;
+					text-indent: 60px;
+					color: #fff;
+					font-size: 15px;
+				}
+				textarea{
+					width: 365px;
+					height: 180px;
+					resize: none;
+				}
+				input:focus,textarea:focus { 
+				    border: 1px solid #757C99;
+				}
 			}
 			input[type="submit"]{
 				background:#E73D3E;
 				font-weight: 700;
 				font-size: 12px;
 				color: #862120;
+				height: 42px;
+				width: 370px;
+				border: none;
+				&:hover{background:#C53332;color:#6A1C1B;}
 			}
 		}
 		.msj-enviado{
@@ -349,7 +370,7 @@ html,body{
 			b{font-weight:700;} 
 		}
 		.iconos-sociales{
-			margin-left: -10px;
+			margin-left: -8px;
 			margin-top: 30px;
 			span{
 				margin-right: 5px;

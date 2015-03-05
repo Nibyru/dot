@@ -9,32 +9,39 @@ nav{
 	height:100%;
 	.menu-visible{
 		position:absolute;
-		width: 100%;
+		width: 85px;
 		text-align: center;
-		top:40%;
+		top:15%;
 		color: rgba(255, 255, 255, 0.7);
 		span{font-size:28px;margin-bottom:2px;}
 		p{font-size:10px;margin:2px 0; font-weight:600;}
-	}
-	.menu-oculto{
-		display: none;
-		position:relative;
-		top:15%;
-		.item-menu{
-			display: block;
-			text-align: center;
-			padding:15px 20px;
-			margin-bottom: 5px;
-			color: #D9BDBF;
-			span{font-size:30px;}
-			p{
-				font-size: 11px;
-				text-transform: uppercase;
-				font-weight: 600;
-				margin:0;
-			}
+		display: table;
+		height: 342px;
+		.boton-menu{
+			display: table-cell;
+			vertical-align: middle;
 		}
-		.item-menu:hover{background:#771E24;color: #B92D37;}
+		.menu-oculto{
+			display: none;
+			position:relative;
+			top:15%;
+			.item-menu{
+				display: block;
+				text-align: center;
+				padding:15px 20px;
+				margin-bottom: 5px;
+				color: #D9BDBF;
+				span{font-size:30px;}
+				p{
+					font-size: 11px;
+					text-transform: uppercase;
+					font-weight: 600;
+					margin:0;
+				}
+			}
+			.item-menu:hover{background:#771E24;color: #B92D37;}
+		}
+
 	}
 	.menu-visible:hover .boton-menu{display: none;}
 	.menu-visible:hover .menu-oculto{display: block;}
