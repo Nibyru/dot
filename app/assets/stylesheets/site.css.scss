@@ -39,6 +39,15 @@
 .icon-quehacemos:before{content:"\e60d";}
 .icon-skype:before{content:"\e60e";}
 .icon-twitter:before{content:"\e60f";}
+.icon-dot:before{
+	content:"inicio";
+	background: url("logo-dot.png") no-repeat;
+	background-size: contain;
+	color: transparent;
+	font-size: 15px;
+	top: -4px;
+	position: relative;
+}
 
 
 *{

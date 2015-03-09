@@ -5,91 +5,56 @@ nav{
 	min-width: 85px;
 	height: 100%;
 	z-index: 999;
-	background:#802027;
-	height:100%;
-	.menu-visible{
-		position:absolute;
-		width: 85px;
-		text-align: center;
-		top:15%;
-		color: rgba(255, 255, 255, 0.7);
+	padding-left: 20px;
+	.menu{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		.item-menu{
+			cursor: pointer;
+			opacity: 0.5;
+			&.active{ opacity: 1; }
+		}
+		a{
+			color: #fff;
+		}
 		span{font-size:28px;margin-bottom:2px;}
-		p{font-size:10px;margin:2px 0; font-weight:600;}
-		display: table;
-		height: 342px;
-		.boton-menu{
-			display: table-cell;
+		p{
+			font-size:14px;
+			margin:2px 0;
+			margin-left: 5px;
+			font-weight:600;
+			display: inline-block;
+			height: 27px;
 			vertical-align: middle;
+			overflow: hidden;
+			text-indent: -100%;
+			transition: all 0.2s ease;
 		}
-		.menu-oculto{
-			display: none;
-			position:relative;
-			top:15%;
-			.item-menu{
-				display: block;
-				text-align: center;
-				padding:15px 20px;
-				margin-bottom: 5px;
-				color: #D9BDBF;
-				span{font-size:30px;}
-				p{
-					font-size: 11px;
-					text-transform: uppercase;
-					font-weight: 600;
-					margin:0;
-				}
+		.item-menu:hover{
+			opacity: 1;
+			p{
+				text-indent: 0;
 			}
-			.item-menu:hover{background:#771E24;color: #B92D37;}
 		}
-
 	}
-	.menu-visible:hover .boton-menu{display: none;}
-	.menu-visible:hover .menu-oculto{display: block;}
 	.iconos-sociales{
 		position: absolute;
 		bottom: 35px;
-		text-align: center;
 		width: 100%;
 		span{
 			font-size:24px;
 			display: block;
 			margin-top: 5px;
-			color: #C09093;
-			&:hover{color:#fff;}
+			color: #fff;
+			opacity: 0.5;
+			&:hover{opacity: 1;}
 		}
 	}
-}
-
-
-
-.barra-menu-quehacemos{
-	background:#202020;
-	height:100%;
-	.menu-oculto{color:#BDBDBD;}
-	.menu-visible{
-		.item-menu{color: #DADADA;}
-		.item-menu:hover{background:#2A2A2A;color: #C24343;}
-	}
-	.iconos-sociales{
-		span{
-			color: #797979;
-			&:hover{color:#fff;}
-		}
-	}
-}
-
-.barra-menu-contacto{
-	background:#1D1F25;
-	height:100%;
-	.menu-oculto{color:#8F8F91;}
-	.menu-visible{
-		.item-menu{color: #3A3E4D;}
-		.item-menu:hover{background:#25272F;color: #A2AACA;}
-	}
-	.iconos-sociales{
-		span{
-			color: #616367;
-			&:hover{color:#8E8F92;}
+	&.dark{
+		a, .iconos-sociales span{
+			color: #555;
 		}
 	}
 }
