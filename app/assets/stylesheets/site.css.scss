@@ -119,6 +119,7 @@ html,body{
 		margin:auto;
 		margin-top: 10%;
 		width: 1020px;
+		padding-left:0;
 		li{
 			display: inline-block;
 			width: 33%;
@@ -147,6 +148,7 @@ html,body{
 		text-align: center;
 		left: 0;
 		right: 0;
+		padding-left:0;
 		li{
 			display:inline-block;
 			padding:10px;
@@ -363,32 +365,36 @@ html,body{
 				margin-bottom:20px;
 				span{
 					position: absolute;
-					font-size: 26px;
-					top: 10px;
-					left: 16px;
+					font-size: 27px;
+					top: 8px;
+					left: 15px;
 					color: #3A3E4D;
 				}
 				.icon-form_nombre, .icon-form_mail{
-					font-size:20px;
-					top: 12px;
+					font-size:22px;
+					top: 11px;
 				}
 				input,textarea{
 					width: 370px;
 					height: 42px;
 					background: #161A25;
-					border: 1px solid #161A25;
-					text-indent: 60px;
+					border: none;
 					color: #fff;
 					font-size: 15px;
+					box-sizing: border-box;
+					padding: 0 10px 0 60px;
 				}
 				textarea{
 					width: 365px;
 					height: 180px;
 					resize: none;
+					padding: 10px;
+					text-indent: 50px;
+					line-height: 25px;
 				}
-				input:focus,textarea:focus { 
-				    border: 1px solid #757C99;
-				}
+				input:focus,textarea:focus {border: 1px solid #757C99;}
+				input:focus + span{color:#757C99;}
+				textarea:focus + span{color:#757C99;}
 			}
 			input[type="submit"]{
 				background:#E73D3E;
