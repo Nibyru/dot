@@ -182,44 +182,92 @@ html,body{
 			width: 188px;
 			height: 188px;
 			border-radius: 100%;
-			
-			.info{
-				display: none;
+			.info-wrap{
 				position: absolute;
-				background: rgba(0, 0, 0, 0.6);
-				color: #fff;
 				width: 174px;
 				height: 174px;
 				border-radius: 100%;
+				perspective: 800px;
+				-webkit-perspective: 800px;
+				-moz-perspective: 800px;
+				-o-perspective: 800px;
+				-ms-perspective: 800px;
+				transition: all 0.4s ease-in-out;
+				background:#F5F5F5;
+				color: #fff;
 				left: 7px;
 				bottom: 7px;
-				-webkit-animation: cssAnimation 0.5s ease;
-				b{
-					display: block;
-					text-transform: uppercase;
-					font-size: 17px;
-					margin: auto;
-					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-					padding-top: 50px;
-					padding-bottom: 15px;
-					width: 120px;
-					font-weight: 700;
+				box-shadow:0 0 0 20px rgba(255,255,255,0.2);
+				.info{
+					position: absolute;
+					width: 174px;
+					height: 174px;
+					border-radius: 100%;
+					transition: all 0.4s ease-in-out;
+					transform-style: preserve-3d;
+					-webkit-transform-style: preserve-3d;
+					-moz-transform-style: preserve-3d;
+					-o-transform-style: preserve-3d;
+					-ms-transform-style: preserve-3d;
+					b{
+						display: block;
+						text-transform: uppercase;
+						font-size: 17px;
+						margin: auto;
+						border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+						padding-top: 50px;
+						padding-bottom: 15px;
+						width: 120px;
+						font-weight: 700;
+					}
+					i{
+						display: block;
+						font-size: 17px;
+						margin-top: 13px;
+						font-weight: 400;
+					}
 				}
-				i{
+				.info > div {
 					display: block;
-					font-size: 17px;
-					margin-top: 13px;
-					font-weight: 400;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					border-radius: 100%;
+					background-position: center center;
+					backface-visibility: hidden;
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-o-backface-visibility: hidden;
+					-ms-backface-visibility: hidden;
+				}
+				.info .info-back {
+					transform: rotate3d(0,1,0,180deg);
+					-webkit-transform: rotate3d(0,1,0,180deg);
+					-moz-transform: rotate3d(0,1,0,180deg);
+					-o-transform: rotate3d(0,1,0,180deg);
+					-ms-transform: rotate3d(0,1,0,180deg);
+					background: #000;
 				}
 			}
 		}
-		li:hover .info{display: block;}
+		li:hover .info-wrap {
+			box-shadow:	0 0 0 0 rgba(255,255,255,0.8);
+		}
+
+		li:hover .info {
+			transform: rotate3d(0,1,0,-180deg);
+			-webkit-transform: rotate3d(0,1,0,-180deg);
+			-moz-transform: rotate3d(0,1,0,-180deg);
+			-o-transform: rotate3d(0,1,0,-180deg);
+			-ms-transform: rotate3d(0,1,0,-180deg);
+		}
 
 		li.adrian{
 			top: 55px;
 			left: 245px;
+			background:url("NOS_ADRIAN.png");
 			.skill-adrian{
-				transition:All 0.5s ease;
+				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 100%;
@@ -231,8 +279,9 @@ html,body{
 		li.ramiro{
 			top: 230px;
 			left: 70px;
+			background:url("NOS_RAMIRO.png");
 			.skill-ramiro{
-				transition:All 0.5s ease;
+				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 41px;
@@ -245,8 +294,9 @@ html,body{
 		li.sebas{
 			top: 230px;
 			right: 65px;
+			background:url("NOS_SEBAS.png");
 			.skill-sebas{
-				transition:All 0.5s ease;
+				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 41px;
@@ -259,8 +309,9 @@ html,body{
 		li.maxi{
 			bottom: 55px;
 			left: 245px;
+			background:url("NOS_MAXI.png");
 			.skill-maxi{
-				transition:All 0.5s ease;
+				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 100%;
@@ -275,12 +326,12 @@ html,body{
 		li.sebas:hover .skill-sebas{opacity:1;}
 		li.maxi:hover .skill-maxi{opacity:1;}
 
-	}
-}
+		.bg-adrian{background:url("NOS_ADRIAN.png");}
+		.bg-ramiro{background:url("NOS_RAMIRO.png");}
+		.bg-sebas{background:url("NOS_SEBAS.png");}
+		.bg-maxi{background:url("NOS_MAXI.png");}
 
-@-webkit-keyframes cssAnimation {
-	from { -webkit-transform:scale(0); }
-	to { -webkit-transform: scale(1); }
+	}
 }
 
 
