@@ -173,7 +173,7 @@ html,body{
 		b{font-weight: 400;}
 	}
 	ul.nosotros{
-		width: 630px;
+		width: 650px;
 		height: 650px;
 		position: relative;
 		margin: auto;
@@ -184,79 +184,86 @@ html,body{
 			width: 188px;
 			height: 188px;
 			border-radius: 100%;
-			.info-wrap{
-				position: absolute;
-				width: 174px;
-				height: 174px;
+			.item {
+				width: 100%;
+				height: 100%;
 				border-radius: 100%;
-				perspective: 800px;
-				-webkit-perspective: 800px;
-				-moz-perspective: 800px;
-				-o-perspective: 800px;
-				-ms-perspective: 800px;
-				transition: all 0.4s ease-in-out;
-				background:#F5F5F5;
-				color: #fff;
-				left: 7px;
-				bottom: 7px;
-				box-shadow:0 0 0 20px rgba(255,255,255,0.2);
-				.info{
+				position: relative;
+				cursor: default;
+				.info-wrap{
 					position: absolute;
 					width: 174px;
 					height: 174px;
 					border-radius: 100%;
+					perspective: 800px;
+					-webkit-perspective: 800px;
+					-moz-perspective: 800px;
+					-o-perspective: 800px;
+					-ms-perspective: 800px;
 					transition: all 0.4s ease-in-out;
-					transform-style: preserve-3d;
-					-webkit-transform-style: preserve-3d;
-					-moz-transform-style: preserve-3d;
-					-o-transform-style: preserve-3d;
-					-ms-transform-style: preserve-3d;
-					b{
-						display: block;
-						text-transform: uppercase;
-						font-size: 17px;
-						margin: auto;
-						border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-						padding-top: 50px;
-						padding-bottom: 15px;
-						width: 120px;
-						font-weight: 700;
+					background:#F5F5F5;
+					color: #fff;
+					left: 7px;
+					bottom: 7px;
+					box-shadow:0 0 0 20px rgba(255,255,255,0.2);
+					.info{
+						position: absolute;
+						width: 174px;
+						height: 174px;
+						border-radius: 100%;
+						transition: all 0.4s ease-in-out;
+						transform-style: preserve-3d;
+						-webkit-transform-style: preserve-3d;
+						-moz-transform-style: preserve-3d;
+						-o-transform-style: preserve-3d;
+						-ms-transform-style: preserve-3d;
+						b{
+							display: block;
+							text-transform: uppercase;
+							font-size: 17px;
+							margin: auto;
+							border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+							padding-top: 50px;
+							padding-bottom: 15px;
+							width: 120px;
+							font-weight: 700;
+						}
+						i{
+							display: block;
+							font-size: 17px;
+							margin-top: 13px;
+							font-weight: 400;
+						}
 					}
-					i{
+					.info > div {
 						display: block;
-						font-size: 17px;
-						margin-top: 13px;
-						font-weight: 400;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						border-radius: 100%;
+						background-position: center center;
+						backface-visibility: hidden;
+						-webkit-backface-visibility: hidden;
+						-moz-backface-visibility: hidden;
+						-o-backface-visibility: hidden;
+						-ms-backface-visibility: hidden;
 					}
-				}
-				.info > div {
-					display: block;
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					border-radius: 100%;
-					background-position: center center;
-					backface-visibility: hidden;
-					-webkit-backface-visibility: hidden;
-					-moz-backface-visibility: hidden;
-					-o-backface-visibility: hidden;
-					-ms-backface-visibility: hidden;
-				}
-				.info .info-back {
-					transform: rotate3d(0,1,0,180deg);
-					-webkit-transform: rotate3d(0,1,0,180deg);
-					-moz-transform: rotate3d(0,1,0,180deg);
-					-o-transform: rotate3d(0,1,0,180deg);
-					-ms-transform: rotate3d(0,1,0,180deg);
-					background: #000;
+					.info .info-back {
+						transform: rotate3d(0,1,0,180deg);
+						-webkit-transform: rotate3d(0,1,0,180deg);
+						-moz-transform: rotate3d(0,1,0,180deg);
+						-o-transform: rotate3d(0,1,0,180deg);
+						-ms-transform: rotate3d(0,1,0,180deg);
+						background: #000;
+					}
 				}
 			}
 		}
-		li:hover .info-wrap {
+		.item:hover .info-wrap {
 			box-shadow:	0 0 0 0 rgba(255,255,255,0.8);
 		}
 
-		li:hover .info {
+		.item:hover .info {
 			transform: rotate3d(0,1,0,-180deg);
 			-webkit-transform: rotate3d(0,1,0,-180deg);
 			-moz-transform: rotate3d(0,1,0,-180deg);
@@ -266,8 +273,7 @@ html,body{
 
 		li.adrian{
 			top: 55px;
-			left: 245px;
-			background:url("NOS_ADRIAN.png");
+			left: 250px;
 			.skill-adrian{
 				transition:All 0.4s ease-in-out;
 				opacity: 0;
@@ -280,8 +286,7 @@ html,body{
 		}
 		li.ramiro{
 			top: 230px;
-			left: 70px;
-			background:url("NOS_RAMIRO.png");
+			left: 65px;
 			.skill-ramiro{
 				transition:All 0.4s ease-in-out;
 				opacity: 0;
@@ -296,7 +301,6 @@ html,body{
 		li.sebas{
 			top: 230px;
 			right: 65px;
-			background:url("NOS_SEBAS.png");
 			.skill-sebas{
 				transition:All 0.4s ease-in-out;
 				opacity: 0;
@@ -310,8 +314,7 @@ html,body{
 		}
 		li.maxi{
 			bottom: 55px;
-			left: 245px;
-			background:url("NOS_MAXI.png");
+			left: 250px;
 			.skill-maxi{
 				transition:All 0.4s ease-in-out;
 				opacity: 0;
@@ -323,16 +326,12 @@ html,body{
 			}
 		}
 
-		li.adrian:hover .skill-adrian{opacity:1;}
-		li.ramiro:hover .skill-ramiro{opacity:1;}
-		li.sebas:hover .skill-sebas{opacity:1;}
-		li.maxi:hover .skill-maxi{opacity:1;}
+		.item:hover ~ .skill{opacity:1;}
 
 		.bg-adrian{background:url("NOS_ADRIAN.png");}
 		.bg-ramiro{background:url("NOS_RAMIRO.png");}
 		.bg-sebas{background:url("NOS_SEBAS.png");}
 		.bg-maxi{background:url("NOS_MAXI.png");}
-
 	}
 }
 
@@ -382,6 +381,10 @@ html,body{
 					color: #fff;
 					font-size: 15px;
 					box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-o-box-sizing: border-box;
+					-ms-box-sizing: border-box;
 					padding: 0 10px 0 60px;
 				}
 				textarea{
@@ -445,6 +448,46 @@ html,body{
 				font-size: 30px;
 				&:hover{color:#757C99;}
 			}
+		}
+	}
+}
+
+
+@media only screen and (max-height: 700px) {
+	#equipo{
+		ul.nosotros{
+			height: 550px;
+			width: 600px;
+		  li {
+			  width: 164px;
+			  height: 164px;
+			  .item{
+			  	.info-wrap{
+			  		width: 150px;
+			  		height: 150px;
+			  		.info{
+			  			width: 150px;
+			  			height: 150px;
+			  		 	b{padding-top: 40px;}
+			  		}
+			  	}
+			  }
+			  
+			}
+			li.adrian,li.maxi{left:240px;}
+			li.ramiro{
+				top:195px;
+				.skill-ramiro{top:-5px;}
+			}
+			li.sebas{
+				top:195px;
+				.skill-sebas{top:-5px;}
+			}
+			
+			.bg-adrian{background-size:100%;}
+			.bg-ramiro{background-size:100%;}
+			.bg-sebas{background-size:100%;}
+			.bg-maxi{background-size:100%;}
 		}
 	}
 }
