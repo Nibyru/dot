@@ -181,7 +181,7 @@ html,body{
 		text-align: center;
 		top: 15px;
 		li{
-			position:absolute;
+			position: absolute;
 			width: 188px;
 			height: 188px;
 			border-radius: 100%;
@@ -206,7 +206,6 @@ html,body{
 					color: #fff;
 					left: 7px;
 					bottom: 7px;
-					box-shadow:0 0 0 20px rgba(255,255,255,0.2);
 					.info{
 						position: absolute;
 						width: 174px;
@@ -272,11 +271,11 @@ html,body{
 			-ms-transform: rotate3d(0,1,0,-180deg);
 		}
 
+		.skill{	transition: all 0.5s linear; }
 		li.adrian{
 			top: 55px;
 			left: 250px;
 			.skill-adrian{
-				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 100%;
@@ -289,7 +288,6 @@ html,body{
 			top: 230px;
 			left: 65px;
 			.skill-ramiro{
-				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 41px;
@@ -303,7 +301,6 @@ html,body{
 			top: 230px;
 			right: 65px;
 			.skill-sebas{
-				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 41px;
@@ -317,7 +314,6 @@ html,body{
 			bottom: 55px;
 			left: 250px;
 			.skill-maxi{
-				transition:All 0.4s ease-in-out;
 				opacity: 0;
 				text-align: center;
 				width: 100%;
@@ -333,6 +329,17 @@ html,body{
 		.bg-ramiro{background:url("NOS_RAMIRO.png");}
 		.bg-sebas{background:url("NOS_SEBAS.png");}
 		.bg-maxi{background:url("NOS_MAXI.png");}
+	}
+	span{
+		border-top: 2pt dashed #eee;
+		display: block;
+		position: relative;
+		top: -308px;
+		left: 6px;
+		transform: rotate(45deg);
+	}
+	span.reverse{
+		transform: rotate(-45deg);
 	}
 }
 
