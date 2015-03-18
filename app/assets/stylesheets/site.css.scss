@@ -75,6 +75,7 @@ html,body{
 	padding-top: 20%;
 	h1.logo{
 		margin:auto;
+		text-indent: -100%;
 		color: transparent;
 		background: url("logo-dot.png") no-repeat;
 		background-size: 100%;
@@ -429,7 +430,9 @@ html,body{
 		text-align: left;
 		padding-left: 45px;
 		width: 260px;
+		height: 493px;
 		margin-top: 90px;
+		position: relative;
 		p{
 			font-size: 15px;
 			color: #C0C0C0;
@@ -448,6 +451,17 @@ html,body{
 				font-size: 30px;
 				&:hover{color:#757C99;}
 			}
+		}
+		.codigo-qr{
+			width: 100px;
+			text-align: center;
+			position:absolute;
+			bottom:-6px;
+			.logo-contactos {
+			  width: 55px;
+			  margin-bottom: 10px;
+			}
+			.qr{width:100px;}
 		}
 	}
 }
