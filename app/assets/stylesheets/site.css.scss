@@ -343,6 +343,87 @@ html,body{
 	}
 }
 
+#portfolio{
+	height:100%;
+	background:#212630;
+	.barra-lateral{
+		background: -webkit-linear-gradient(left, #212630 65%, rgba(255, 255, 255, 0) 80%);
+		background: -moz-linear-gradient(left, #212630 65%, rgba(255, 255, 255, 0) 80%);
+		background: -o-linear-gradient(left, #212630 65%, rgba(255, 255, 255, 0) 80%);
+		background: -ms-linear-gradient(left, #212630 65%, rgba(255, 255, 255, 0) 80%);
+		position: fixed;
+		height: 100%;
+		width: 110px;
+		z-index: 10;
+	}
+	ul.muestra-trabajos{
+		margin:0;
+		padding:0;
+		height: 100%;
+		width: calc(100% - 75px);
+		padding-left:75px;
+		li{
+			display: inline-block;
+			position:relative;
+			width: 33.3333%;
+			height: 50%;
+			margin:-1px -2px;
+			.bg-trabajo{
+				background-size:cover !important;
+				background-position: center !important;
+				background-repeat:no-repeat;
+				width: 100%;
+				height: 100%;
+				transition: 0.5s ease-in-out;
+				-webkit-transition: 0.5s ease-in-out;
+				-moz-transition: 0.5s ease-in-out;
+				-o-transition: 0.5s ease-in-out;
+				-ms-transition: 0.5s ease-in-out;
+			}
+			.nombre-trabajo{
+				position:absolute;
+				bottom:20px;
+				right:30px;
+				color: #fff;
+				text-shadow: 0px 2px 4px #000;
+				text-align: right;
+				opacity: 0;
+				transition: 0.7s ease-in-out;
+				-webkit-transition: 0.7s ease-in-out;
+				-moz-transition: 0.7s ease-in-out;
+				-o-transition: 0.7s ease-in-out;
+				-ms-transition: 0.7s ease-in-out;
+				h2{
+					font-weight:400;
+					font-size:32px;
+					margin:0;
+				}
+				p{
+					font-weight:300;
+					font-size:18px;
+					margin:0;
+				}
+			}
+		}
+
+		.img-1{background:url("portfolio-img1.jpg");}
+		.img-2{background:url("portfolio-img2.jpg");}
+		.img-3{background:url("portfolio-img3.jpg");}
+		.img-4{background:url("portfolio-img4.jpg");}
+		.img-5{background:url("portfolio-img5.jpg");}
+		.img-6{background:url("portfolio-img6.jpg");}
+
+		li:hover{
+			.img-1{background:url("portfolio-img1blur.jpg");}
+			.img-2{background:url("portfolio-img2blur.jpg");}
+			.img-3{background:url("portfolio-img3blur.jpg");}
+			.img-4{background:url("portfolio-img4blur.jpg");}
+			.img-5{background:url("portfolio-img5blur.jpg");}
+			.img-6{background:url("portfolio-img6blur.jpg");}
+			.nombre-trabajo{opacity:1;}
+		}
+	}
+}
 
 
 #contacto{
@@ -367,45 +448,120 @@ html,body{
 		margin-top: 90px;
 		form{
 			width: 370px;
-			.campo{
+			.input {
+				z-index: 1;
+				display: block;
+				width: 370px;
+				height: 65px;
+				vertical-align: top;
+				color: #fff;
+				font-size: 15px;
+				margin-bottom: 10px;
+			}
+			.input__field {
 				position: relative;
-				margin-bottom:20px;
-				span{
-					position: absolute;
-					font-size: 27px;
-					top: 8px;
-					left: 15px;
-					color: #3A3E4D;
-				}
-				.icon-form_nombre, .icon-form_mail{
-					font-size:22px;
-					top: 11px;
-				}
-				input,textarea{
-					width: 370px;
-					height: 42px;
-					background: #161A25;
-					border: none;
-					color: #fff;
-					font-size: 15px;
-					box-sizing: border-box;
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					-o-box-sizing: border-box;
-					-ms-box-sizing: border-box;
-					padding: 0 10px 0 60px;
-				}
-				textarea{
-					width: 365px;
-					height: 180px;
-					resize: none;
-					padding: 10px;
-					text-indent: 50px;
-					line-height: 25px;
-				}
-				input:focus,textarea:focus {border: 1px solid #757C99;}
-				input:focus + span{color:#757C99;}
-				textarea:focus + span{color:#757C99;}
+				display: block;
+				float: right;
+				padding: 13px;
+				width: 60%;
+				border: none;
+				border-radius: 0;
+				background: #f0f0f0;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				-webkit-appearance: none; /* for box shadows to show on iOS */
+			}
+			.input__field:focus {outline: none;}
+			.input__label {
+				display: block;
+			  float: right;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			  -webkit-touch-callout: none;
+			  -webkit-user-select: none;
+			  -khtml-user-select: none;
+			  -moz-user-select: none;
+			  -ms-user-select: none;
+			  user-select: none;
+			}
+			.input__label-content {
+				position: relative;
+				display: block;
+				padding: 1.6em 0;
+				width: 100%;
+			}
+			.input__field--yoko {
+				z-index: 10;
+			  width: 370px;
+			  height: 37px;
+			  background: transparent;
+			  color: #f5f5f5;
+			  opacity: 0;
+			  -webkit-transition: opacity 0.3s;
+			  transition: opacity 0.3s;
+			  box-sizing: border-box;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  -o-box-sizing: border-box;
+			  -ms-box-sizing: border-box;
+			  padding: 0 15px;
+			  font-size: 15px;
+			}
+			.input__label--yoko {
+				position: relative;
+			  width: 100%;
+			  color: #4A4E5D;
+			  text-align: left;
+			  font-size: 14px;
+			  font-weight: 700;
+			}
+			.input__label--yoko::before {
+				content: '';
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				width: 100%;
+				height: 37px;
+				background: #3A3E4D;
+				-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+				transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+				-webkit-transform-origin: 50% 100%;
+				transform-origin: 50% 100%;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
+			}
+			.input__label--yoko::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: #4A4E5D;
+				-webkit-transform-origin: 50% 0%;
+				transform-origin: 50% 0%;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
+			}
+			.input__label-content--yoko {padding: 3px 15px;}
+			.input__field--yoko:focus,
+			.input--filled .input__field--yoko {
+				opacity: 1;
+				-webkit-transition-delay: 0.3s;
+				transition-delay: 0.3s;
+			}
+			.input__field--yoko:focus + .input__label--yoko::before,
+			.input--filled .input__label--yoko::before {
+				-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+				transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+			}
+			.input__field--yoko:focus + .input__label--yoko,
+			.input--filled .input__label--yoko {
+				pointer-events: none;
+			}
+			.input__field--yoko:focus + .input__label--yoko::after,
+			.input--filled .input__label--yoko::after {
+				-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+				transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
 			}
 			input[type="submit"]{
 				background:#E73D3E;
@@ -472,6 +628,9 @@ html,body{
 		}
 	}
 }
+
+
+
 
 
 @media only screen and (max-height: 700px) {

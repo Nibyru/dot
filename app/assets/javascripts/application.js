@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require classie
 //= require jquery.onepage-scroll.min
 //= require_tree .
 var ready;
@@ -27,7 +28,7 @@ ready = function() {
 	   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
 	   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
 	   afterMove: function(index) {
-	   	if(index > 1 && index < 5){
+	   	if(index > 1 && index < 4){
 	   		$('nav').addClass('dark');
 	   	}else{
 	   		$('nav').removeClass('dark');
@@ -48,6 +49,7 @@ ready = function() {
 		$(".main").moveTo($(this).data('index'));
 	});
 };
+
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
