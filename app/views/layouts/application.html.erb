@@ -49,6 +49,41 @@
 				classie.remove( ev.target.parentNode, 'input--filled' );
 			}
 		}
+
+
+
+		if (!String.prototype.trim) {
+			(function() {
+				// Make sure we trim BOM and NBSP
+				var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+				String.prototype.trim = function() {
+					return this.replace(rtrim, '');
+				};
+			})();
+		}
+
+		[].slice.call( document.querySelectorAll( 'textarea.input__field' ) ).forEach( function( textareaEl ) {
+			// in case the input is already filled..
+			if( textareaEl.value.trim() !== '' ) {
+				classie.add( textareaEl.parentNode, 'input--filled' );
+			}
+
+			// events:
+			textareaEl.addEventListener( 'focus', onTextareaFocus );
+			textareaEl.addEventListener( 'blur', onTextareaBlur );
+		} );
+
+		function onTextareaFocus( ev ) {
+			classie.add( ev.target.parentNode, 'input--filled' );
+		}
+
+		function onTextareaBlur( ev ) {
+			if( ev.target.value.trim() === '' ) {
+				classie.remove( ev.target.parentNode, 'input--filled' );
+			}
+		}
+
+
 	})();
 </script>
 </body>

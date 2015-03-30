@@ -445,9 +445,11 @@ html,body{
 		border-right:1px solid #272d39;
 		width: 370px;
 		padding-right: 45px;
-		margin-top: 90px;
+		margin-top: 70px;
 		form{
+			position:relative;
 			width: 370px;
+			height: 500px;
 			.input {
 				z-index: 1;
 				display: block;
@@ -563,7 +565,24 @@ html,body{
 				-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
 				transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
 			}
+			.mensaje{
+				height: 145px;
+			}
+			.mensaje .input__field--yoko{
+				height: 125px;
+			}
+			.mensaje .input__label--yoko::before{
+				height: 125px;
+			}
+			textarea{
+				padding-top: 10px !important;
+			  padding-bottom: 10px !important;
+			  resize: none;	
+			}
 			input[type="submit"]{
+				position:absolute;
+				left: 0;
+				bottom: 0;
 				background:#E73D3E;
 				font-weight: 700;
 				font-size: 12px;
@@ -593,8 +612,8 @@ html,body{
 		text-align: left;
 		padding-left: 45px;
 		width: 260px;
-		height: 493px;
-		margin-top: 90px;
+		height: 500px;
+		margin-top: 70px;
 		position: relative;
 		p{
 			font-size: 15px;
