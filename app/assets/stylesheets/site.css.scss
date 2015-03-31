@@ -174,16 +174,17 @@ html,body{
 		b{font-weight: 400;}
 	}
 	ul.nosotros{
-		width: 650px;
-		height: 650px;
+		/*height: 650px;
+		width: 650px;*/
 		position: relative;
 		margin: auto;
 		text-align: center;
 		top: 15px;
+		padding-left:0;
 		li{
 			position: absolute;
-			width: 188px;
-			height: 188px;
+			width: 29%;
+			height: 29%;
 			border-radius: 100%;
 			.item {
 				width: 100%;
@@ -193,8 +194,8 @@ html,body{
 				cursor: default;
 				.info-wrap{
 					position: absolute;
-					width: 174px;
-					height: 174px;
+					width: 92%;
+					height: 92%;
 					border-radius: 100%;
 					perspective: 800px;
 					-webkit-perspective: 800px;
@@ -204,13 +205,14 @@ html,body{
 					transition: all 0.4s ease-in-out;
 					background:#F5F5F5;
 					color: #fff;
-					left: 7px;
-					bottom: 7px;
+					left: 4%;
+				  top: 4%;
 					.info{
 						position: absolute;
-						width: 174px;
-						height: 174px;
+						width: 100%;
+						height: 100%;
 						border-radius: 100%;
+						font-size: 17px;
 						transition: all 0.4s ease-in-out;
 						transform-style: preserve-3d;
 						-webkit-transform-style: preserve-3d;
@@ -220,17 +222,15 @@ html,body{
 						b{
 							display: block;
 							text-transform: uppercase;
-							font-size: 17px;
 							margin: auto;
 							border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-							padding-top: 50px;
-							padding-bottom: 15px;
-							width: 120px;
+							padding-top: 25%;
+							padding-bottom: 8%;
+							width: 70%;
 							font-weight: 700;
 						}
 						i{
 							display: block;
-							font-size: 17px;
 							margin-top: 13px;
 							font-weight: 400;
 						}
@@ -273,62 +273,82 @@ html,body{
 
 		.skill{	transition: all 0.5s linear; }
 		li.adrian{
-			top: 55px;
-			left: 250px;
+			top: 60px;
+			left: 0;
+			right: 0;
+			margin: auto;
 			.skill-adrian{
 				opacity: 0;
 				text-align: center;
 				width: 100%;
 				position: absolute;
-				top: -50px;
-				img{margin:0 3px;}
+				top: -26%;
+				img{margin:0 3px;  width:22%;}
 			}
 		}
 		li.ramiro{
-			top: 230px;
-			left: 65px;
+			left: 50px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 			.skill-ramiro{
 				opacity: 0;
 				text-align: center;
-				width: 41px;
+				height: 91%;
 				position: absolute;
-				left: -65px;
-				top: 10px;
-				img{display: block;margin: 10px auto;}
+				left: -26%;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				img{
+					display:block;
+					margin:10px auto;
+					height:25.5%;
+				}
 			}
 		}
 		li.sebas{
-			top: 230px;
-			right: 65px;
+			right: 50px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 			.skill-sebas{
 				opacity: 0;
 				text-align: center;
-				width: 41px;
+				height: 91%;
 				position: absolute;
-				right: -65px;
-				top: 10px;
-				img{display: block;margin: 10px auto;}
+				right: -26%;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				img{
+					display:block;
+					margin:10px auto;
+					height:25.5%;
+				}
 			}
 		}
 		li.maxi{
-			bottom: 55px;
-			left: 250px;
+			bottom: 60px;
+			left: 0;
+			right: 0;
+			margin: auto;
 			.skill-maxi{
 				opacity: 0;
 				text-align: center;
 				width: 100%;
 				position: absolute;
-				bottom: -50px;
-				img{margin:0 3px;}
+				bottom: -26%;
+				img{margin:0 3px;  width:22%;}
 			}
 		}
 
 		.item:hover ~ .skill{opacity:1;}
 
-		.bg-adrian{background:url("NOS_ADRIAN.png");}
-		.bg-ramiro{background:url("NOS_RAMIRO.png");}
-		.bg-sebas{background:url("NOS_SEBAS.png");}
-		.bg-maxi{background:url("NOS_MAXI.png");}
+		.bg-adrian{background:url("NOS_ADRIAN.png") no-repeat;}
+		.bg-ramiro{background:url("NOS_RAMIRO.png") no-repeat;}
+		.bg-sebas{background:url("NOS_SEBAS.png") no-repeat;}
+		.bg-maxi{background:url("NOS_MAXI.png") no-repeat;}
 	}
 	span{
 		border-top: 2pt dashed #eee;
@@ -342,6 +362,8 @@ html,body{
 		transform: rotate(-45deg);
 	}
 }
+
+
 
 #portfolio{
 	height:100%;
@@ -651,38 +673,16 @@ html,body{
 
 
 
-
 @media only screen and (max-height: 700px) {
 	#equipo{
-		ul.nosotros{
-			height: 550px;
-			width: 600px;
-		  li {
-			  width: 164px;
-			  height: 164px;
-			  .item{
-			  	.info-wrap{
-			  		width: 150px;
-			  		height: 150px;
-			  		.info{
-			  			width: 150px;
-			  			height: 150px;
-			  		 	b{padding-top: 40px;}
-			  		}
-			  	}
-			  }
-			  
+		ul.nosotros li{
+			.item .info-wrap .info{
+				width: 102%;
+				height: 102%;
+				left: -1%;
+				top: -1%;
+				font-size: 14px !important;
 			}
-			li.adrian,li.maxi{left:240px;}
-			li.ramiro{
-				top:195px;
-				.skill-ramiro{top:-5px;}
-			}
-			li.sebas{
-				top:195px;
-				.skill-sebas{top:-5px;}
-			}
-			
 			.bg-adrian{background-size:100%;}
 			.bg-ramiro{background-size:100%;}
 			.bg-sebas{background-size:100%;}
@@ -690,3 +690,4 @@ html,body{
 		}
 	}
 }
+
