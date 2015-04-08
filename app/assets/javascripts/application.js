@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require classie
 //= require jquery.onepage-scroll.min
 //= require_tree .
+
 var ready;
 ready = function() {
 	var lastIndex = 0;
@@ -47,6 +47,18 @@ ready = function() {
 	$('body').on('click', '.item-menu a', function(){
 		console.log('ok');
 		$(".main").moveTo($(this).data('index'));
+	});
+
+	var update_window_height = function(){
+		var altbody = $('body').height();
+		$('.nosotros').css({'height':altbody-100});
+		var altnosotros = $('.nosotros').height();
+		$('.nosotros').css({'width':altnosotros+'px'});
+	}
+
+	update_window_height();
+	$( window ).resize(function() {
+		update_window_height();
 	});
 };
 

@@ -15,7 +15,7 @@
 <div class="main">
 	<%= yield %>
 </div>
-<script src="js/classie.js"></script>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"> <filter id="blur"> <feGaussianBlur stdDeviation="3" /> </filter> </svg>
 <script>
 	(function() {
 		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
@@ -85,10 +85,7 @@
 
 	})();
 	
-	var altbody = $('body').height();
-	$('.nosotros').css({'height':altbody-100});
-	var altnosotros = $('.nosotros').height();
-	$('.nosotros').css({'width':altnosotros+'px'});
+	
 </script>
 </body>
 </html>
