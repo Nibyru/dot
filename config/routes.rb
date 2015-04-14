@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'equipo' => 'site#equipo'
   get 'portfolio' => 'site#portfolio'
   get 'contacto' => 'site#contacto'
+  post 'contacto' => 'site#new_contact', as: :new_contact
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -2,9 +2,9 @@
 	<h2>Contáctanos</h2>
 
 	<div class="formulario">
-		<form>
+		<%= form_for @contact, url: new_contact_path(@contact), remote: true do |f| %>
 			<span class="input input--nao">
-				<input class="input__field input__field--nao" type="text" id="input-1" />
+				<input name="contact[nombre]" class="input__field input__field--nao" type="text" id="input-1" />
 				<label class="input__label input__label--nao" for="input-1">
 					<span class="input__label-content input__label-content--nao">Nombre</span>
 				</label>
@@ -13,7 +13,7 @@
 				</svg>
 			</span>
 			<span class="input input--nao">
-				<input class="input__field input__field--nao" type="text" id="input-1" />
+				<input name="contact[email]" class="input__field input__field--nao" type="text" id="input-1" />
 				<label class="input__label input__label--nao" for="input-1">
 					<span class="input__label-content input__label-content--nao">E-mail</span>
 				</label>
@@ -22,7 +22,7 @@
 				</svg>
 			</span>
 			<span class="input input--nao">
-				<input class="input__field input__field--nao" type="text" id="input-1" />
+				<input name="contact[tel]" class="input__field input__field--nao" type="text" id="input-1" />
 				<label class="input__label input__label--nao" for="input-1">
 					<span class="input__label-content input__label-content--nao">Teléfono</span>
 				</label>
@@ -31,7 +31,7 @@
 				</svg>
 			</span>
 			<span class="input input--nao">
-				<input class="input__field input__field--nao" type="text" id="input-1" />
+				<input name="contact[address]" class="input__field input__field--nao" type="text" id="input-1" />
 				<label class="input__label input__label--nao" for="input-1">
 					<span class="input__label-content input__label-content--nao">Dirección</span>
 				</label>
@@ -40,7 +40,7 @@
 				</svg>
 			</span>
 			<span class="input mensaje input--nao">
-				<textarea class="input__field input__field--nao" rows="5" id="input-1"></textarea>
+				<textarea name="contact[body]" class="input__field input__field--nao" rows="5" id="input-1"></textarea>
 				<label class="input__label input__label--nao" for="input-1">
 					<span class="input__label-content input__label-content--nao">Mensaje</span>
 				</label>
@@ -51,7 +51,7 @@
 			<span class="input submit">
 				<input type="submit" value="ENVIAR" />
 			</span>
-		</form>
+		<% end %>
 
 		<div class="msj-enviado">
 			<span class="icon-form_avion"></span>

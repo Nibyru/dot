@@ -126,6 +126,10 @@ ready = function() {
 		}
 	}
 
+	$('form#new_contact').on('ajax:success',function(event, data, status, xhr){
+	  alert(data);
+	});
+
 };
 
 
