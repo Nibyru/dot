@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'site#index'
+  get 'web' => 'site#web'
   get 'que_hacemos' => 'site#que_hacemos'
   get 'equipo' => 'site#equipo'
   get 'portfolio' => 'site#portfolio'

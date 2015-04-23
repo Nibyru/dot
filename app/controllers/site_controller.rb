@@ -4,6 +4,9 @@ class SiteController < ApplicationController
     @contact = Contact.new()
   end
 
+  def web
+  end
+
   def new_contact
     @contact = Contact.new(contact_params)
     respond_to do |format|

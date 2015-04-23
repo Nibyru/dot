@@ -1,4 +1,3 @@
-/*
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?gdqphd');
@@ -588,20 +587,44 @@ html,body{
 		}
 	}
 }
-*/
 
-@font-face {
-	font-family: 'dot';
-	src:url('fonts/dot.eot?gdqphd');
-	src:url('fonts/dot.eot?#iefixgdqphd') format('embedded-opentype'),
-		url('fonts/dot.woff?gdqphd') format('woff'),
-		url('fonts/dot.ttf?gdqphd') format('truetype'),
-		url('fonts/dot.svg?gdqphd#dot') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
-[class^="icon-"], [class*=" icon-"] {
+
+
+
+
+
+
+
+
+/* ----------------------- LANDING ----------------------- */
+/* ----------------------- LANDING ----------------------- */
+/* ----------------------- LANDING ----------------------- */
+/* ----------------------- LANDING ----------------------- */
+
+
+
+#web{
+	height:100%;
+	font-family: 'Roboto', sans-serif;
+	section{
+		height: 100%;
+		width: 100%;
+		background: url("background.jpg") center center no-repeat;
+		background-size:cover;
+	}
+
+	@font-face {
+		font-family: 'dot';
+		src:url('fonts/dot.eot?gdqphd');
+		src:url('fonts/dot.eot?#iefixgdqphd') format('embedded-opentype'),
+			url('fonts/dot.woff?gdqphd') format('woff'),
+			url('fonts/dot.ttf?gdqphd') format('truetype'),
+			url('fonts/dot.svg?gdqphd#dot') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	[class^="icon-"], [class*=" icon-"] {
 	font-family: 'dot';
 	speak: none;
 	font-style: normal;
@@ -610,63 +633,34 @@ html,body{
 	text-transform: none;
 	line-height: 1;
 
-	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-como:before {
-	content: "\e600";
-}
-
-.icon-manos:before {
-	content: "\e601";
-}
-
-.icon-problema:before {
-	content: "\e602";
-}
-
-.icon-solucion:before {
-	content: "\e603";
-}
-
-
-
-
-.col-centered{
-	float: none;
-	margin: 0 auto;
-	width:80%;
-}
-
-html,body{
-	height:100%;
-	width:100%;
-	font-family: 'Roboto', sans-serif;
-}
-
-body {
-	background: url("background.jpg") center center no-repeat;
-	background-size:cover;
 	}
 
+	.icon-como:before{content: "\e600";}
+	.icon-manos:before{content: "\e601";}
+	.icon-problema:before{content: "\e602";}
+	.icon-solucion:before{content: "\e603";}
 
-nav #menu{
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+		width:80%;
+	}
+
+}
+
+#menu2{
 	position:fixed;
 	bottom:5%;
 	left: 50%;
 	width:100%;
 	text-align:center;
-    transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 	z-index:1000;
-	}
-	
-.onepage-pagination {
-	display:none;
 }
-	
-nav #menu .item-menu {
+.onepage-pagination{display:none;}
+#menu2 .item-menu {
 	cursor:pointer;
 	display:inline-block;
 	text-decoration:none;
@@ -676,80 +670,60 @@ nav #menu .item-menu {
 	padding-left:1.5%;
 	padding-right:1.5%;
 	font-weight:300;
-	}
-
-nav #menu .item-menu:hover {
+}
+#menu2 .item-menu:hover {
 	color:#555;
 	font-weight:300;
 	text-decoration:none;
-	}
-	
-
-nav #menu .item-menu:focus {
+}
+#menu2 .item-menu:focus {
 	color:#555;
 	font-weight:300;
 	text-decoration:none;
-	}
-	
-nav #menu .item-menu:active {
+}
+#menu2 .item-menu:active {
 	color:#555;
 	font-weight:300;
 	text-decoration:none;
-	}
-	
-nav #menu .item-menu a p{
-	margin:0;
-}	
-nav #menu .item-menu a span {
+}
+#menu2 .item-menu a p{margin:0;} 
+#menu2 .item-menu a span {
 	display:none;
 	font-size:42px;
-	}
-	
-.active p{
+}
+#menu2 .active p{
 	color:#555;
 	font-weight:300;
 	text-decoration:none;
-	}
-	
-nav #menu .item-menu.active a span {
+}
+#menu2 .item-menu.active a span {
 	display: block;
 	color:#cf4241;
-	}
+}
+
 
 
 /*---------- PROBLEMA --------------*/
-	
 #problema .texto{
 	text-align:center;
 	font-size:60px;
 	font-weight:300;
 	color:#9e9e9e;
 	margin-top:25%;
-	}
-	
-#problema .texto b {
-	font-weight:400;
-	}
+}
+#problema .texto b {font-weight:400;}
 
 
 
 /*---------- SOLUCION --------------*/
-
-#solucion {
-	padding-top:5%;
-	}
-
+#solucion {padding-top:5%;}
 #solucion h1 {
 	font-size:55px;
 	text-align:left;
 	color:#c8403f;
 	font-weight:300;
-	}
-
-#solucion h1 span {
-	font-weight:400;
-	}
-	
+}
+#solucion h1 span {font-weight:400;}
 #solucion p {
 	font-size:20px;
 	line-height:30px;
@@ -758,40 +732,27 @@ nav #menu .item-menu.active a span {
 	margin-bottom:20px;
 	margin-top:20px;
 	max-width:417px;
-	}
+}
 
 
 
 /*---------- ¿COMO? --------------*/
 
 
-#como {
-	padding-top:5%;
-	}
-
-
+#como {padding-top:5%;}
 #como h1 {
 	font-size:55px;
 	text-align:center;
 	color:#c8403f;
 	font-weight:300;
-	}
-	
-#como h1 span {
-	font-weight:400;
-	}
-
-
-	
+}
+#como h1 span {font-weight:400;}
 #como .herramienta {
 	width:45%;
 	height:335px;
 	display:inline-block;
 	float:left;
-	}
-	
-	
-
+}
 #como .herramienta .icono {
 	margin:40px auto;
 	height:124px;
@@ -799,15 +760,13 @@ nav #menu .item-menu.active a span {
 	margin-bottom:15px;
 	background-repeat:no-repeat;
 	background-position:center;
-	}
-	
+}
 #como .herramienta h1 {
 	font-weight:700;
 	font-size:20px;
 	color:#888888;
 	text-align:center;
-	}
-
+}
 #como .herramienta p {
 	font-weight:300;
 	font-size:20px;
@@ -815,84 +774,63 @@ nav #menu .item-menu.active a span {
 	margin:0 auto;
 	text-align:center;
 	width:295px;
-	}
-
+}
 #como .herramienta .web{background:url('web.png');}
-
 #como .herramienta .social{background:url('social.png');}
-
 #como .separador {
 	width:10%;
 	height:335px;
 	display:inline-block;
 	float:left;
-	}
-	
+}
 #como .separador div {
 	margin:0 auto;
 	text-align:center;
 	height:335px;
 	width:1px;
 	border-left:1px dotted #e7e7e7;
-	}
-	
-#como .separador-como {
-	margin-top:60px;
-	}
+}
+#como .separador-como {margin-top:60px;}
+
 
 
 /*---------- CONTACTO --------------*/
-
-
-#contacto {
-	padding-top:5%;
-	}
-
-
-#contacto h1 {
+#contactoweb {padding-top:5%;}
+#contactoweb h1 {
 	font-size:55px;
 	text-align:center;
 	color:#c8403f;
 	font-weight:300;
-	}
-	
-#contacto h1 span {
+}
+#contactoweb h1 span {
 	font-weight:400;
-	}
-
-#contacto .dot {
+}
+#contactoweb .dot {
 	margin:125px auto;
 	width:100%;
 	text-align:center;
-	}
-	
-#contacto .dot a {
+}
+#contactoweb .dot a {
 	margin:0 auto;
 	color:#999;
 	font-size:17px;
 	text-align:center;
 	font-weight:300;
 	text-decoration:none;
-	}
-#contacto .dot a span {
-	font-weight:400;
-	}
-	
-#contacto .dot a:hover {
+}
+#contactoweb .dot a span {font-weight:400;}
+#contactoweb .dot a:hover {
 	color:#c8403f;
 	text-decoration:none;
-	}
-	
-#contacto .dot .logo {
+}
+#contactoweb .dot .logo {
 	margin:0 auto;
 	width:89px;
 	height:36px;
 	margin-bottom:10px;
 	background:url("logo.png") center no-repeat;
-	}
-
-
-#contacto .confia {
+}
+#contactoweb .confia {
 	margin:50px auto;
 	width:100%;
 	font-size:13px;
@@ -900,20 +838,15 @@ nav #menu .item-menu.active a span {
 	text-align:center;
 	font-weight:300;
 	margin-bottom:10px;
-	}	
-	
-#contacto .confia span {
-	font-weight:400;
-	}
-
-#contacto .clientes {
+} 
+#contactoweb .confia span {font-weight:400;}
+#contactoweb .clientes {
 	list-style:none;
 	margin:0 auto;
 	width:870px;
 	padding-left:0;
-	}
-	
-#contacto .clientes li {
+}
+#contactoweb .clientes li {
 	height:59px;
 	text-align:center;
 	float:left;
@@ -923,16 +856,14 @@ nav #menu .item-menu.active a span {
 	margin-left:20px;
 	margin-right:20px;
 	transition:All 0.25s ease-in-out;
-	}
-
-#contacto .clientes li:hover{
+}
+#contactoweb .clientes li:hover{
 	-webkit-filter: brightness(0.8);
 	-moz-filter: brightness(0.8);
 	-o-filter: brightness(0.8);
 	-ms-filter: brightness(0.8);
 }
-
-#contacto{
+#contactoweb{
 	.cliente-trailing{
 		background:url('cliente-trailing.png');
 		width: 88px;
@@ -960,10 +891,7 @@ nav #menu .item-menu.active a span {
 	}
 }
 
-
-
 @media only screen and (max-width: 1400px) {
-	
 	#problema .texto{
 		font-size:45px;
 		margin-top:25%;
@@ -1001,26 +929,23 @@ nav #menu .item-menu.active a span {
 	#como .separador{height:300px;}
 	#como .separador div {height:300px;}
 	#como .separador-como{margin-top:40px;}
-	
-	#contacto h1 {
+
+	#contactoweb h1 {
 		font-size:45px;
 		width:100%;
 	}
-	
-	#contacto .dot {margin:80px auto;}
-	
-	nav #menu .item-menu a p{font-size:18px;}
+	#contactoweb .dot {margin:80px auto;}
 
+	nav #menu2 .item-menu a p{font-size:18px;}
 }
-	
+
 
 @media only screen and (max-width: 1290px) {
-	
 	#problema .texto {
 		font-size:45px;
 		margin-top:25%;
 	}
-	
+
 	#solucion h1 {
 		font-size:45px;
 		width:100%;
@@ -1038,14 +963,12 @@ nav #menu .item-menu.active a span {
 		width:100%;
 		margin-top:1.5%;
 	}
-	
 	#como .herramienta p {
 		font-size:15px;
 		line-height:25px;
 		text-align:center;
 		width:250px;
 	}
-	
 	#como .herramienta .icono {
 		height:100px;
 		width:100px;
@@ -1057,21 +980,19 @@ nav #menu .item-menu.active a span {
 	#como .separador {height:150px;}
 	#como .separador div {height:280px;}
 	#como .separador-como {margin-top:20px;}
-	
-	#contacto h1 {
-	font-size:45px;
-	width:100%;
-	margin-top:1.5%;
+
+	#contactoweb h1 {
+		font-size:45px;
+		width:100%;
+		margin-top:1.5%;
 	}
-	#contacto .dot {margin:70px auto;}
-	#contacto .confia {margin:10px auto;}
-	
-	
-	nav #menu .item-menu a p{font-size:15px;}
-	nav #menu .item-menu a span {font-size:30px;}
+	#contactoweb .dot {margin:70px auto;}
+	#contactoweb .confia {margin:10px auto;}
+
+
+	nav #menu2 .item-menu a p{font-size:15px;}
+	nav #menu2 .item-menu a span {font-size:30px;}
 }
-	
-	
-	
-	
-	
+
+
+
