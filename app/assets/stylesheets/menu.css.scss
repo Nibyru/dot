@@ -11,6 +11,7 @@ nav{
 		flex-direction: column;
 		height: 100%;
 		justify-content: center;
+		font-family: Lato;
 		.item-menu{
 			cursor: pointer;
 			opacity: 0.5;
@@ -38,6 +39,18 @@ nav{
 				text-indent: 0;
 			}
 		}
+		&.dark{
+			a, .iconos-sociales span{
+				color: #555;
+			}
+			.icon-dot{
+				filter: brightness(0.5);
+				-webkit-filter: brightness(0.5);
+				-moz-filter: brightness(0.5);
+				-o-filter: brightness(0.5);
+				-ms-filter: brightness(0.5);
+			}
+		}
 	}
 	.iconos-sociales{
 		display: none;
@@ -50,18 +63,6 @@ nav{
 			color: #fff;
 			opacity: 0.5;
 			&:hover{opacity: 1;}
-		}
-	}
-	&.dark{
-		a, .iconos-sociales span{
-			color: #555;
-		}
-		.icon-dot{
-			filter: brightness(0.5);
-			-webkit-filter: brightness(0.5);
-			-moz-filter: brightness(0.5);
-			-o-filter: brightness(0.5);
-			-ms-filter: brightness(0.5);
 		}
 	}
 }

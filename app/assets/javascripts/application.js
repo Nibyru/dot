@@ -29,9 +29,9 @@ ready = function() {
 	   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
 	   afterMove: function(index) {
 	   	if(index > 1 && index < 4){
-	   		$('nav').addClass('dark');
+	   		$('nav .menu').addClass('dark');
 	   	}else{
-	   		$('nav').removeClass('dark');
+	   		$('nav .menu').removeClass('dark');
 	   	}
 	   	$('.item-menu').removeClass('active');
 	   	$('.item-menu:nth-child(' + eval(index) +')').addClass('active');
