@@ -73,27 +73,30 @@ html,body{
 
 #home{
 	height:100%;
-	padding-top: 20%;
 	font-family: Lato;
-	h1.logo{
-		margin:auto;
-		text-indent: -100%;
-		color: transparent;
-		background: url("logo-dot.png") no-repeat;
-		background-size: 100%;
-		height: 57px;
-		width: 131px;
-	}
-	h2{
-		margin:auto;
-		margin-top: 35px;
-		width: 400px;
-		text-align: center;
-		color: #FFFFFF;
-		font-size: 30px;
-		font-family: ubuntu;
-		font-weight: 300;
-		b{font-weight: 400;}
+	position:relative;
+	.logo-home{
+		padding-top:20%;
+		h1.logo{
+			margin:auto;
+			text-indent: -100%;
+			color: transparent;
+			background: url("logo-dot.png") no-repeat;
+			background-size: 100%;
+			height: 57px;
+			width: 131px;
+		}
+		h2{
+			margin:auto;
+			margin-top: 35px;
+			width: 400px;
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 30px;
+			font-family: ubuntu;
+			font-weight: 300;
+			b{font-weight: 400;}
+		}
 	}
 	.scroll{
 		position: absolute;
@@ -109,6 +112,7 @@ html,body{
 #quehacemos{
 	height:100%;
 	font-family: Lato;
+	position:relative;
 	h2{
 		padding-top:50px;
 		margin:0;
@@ -186,6 +190,8 @@ html,body{
 		text-align: center;
 		top: 15px;
 		padding-left:0;
+		background:url("cruz.png");
+		background-size:cover;
 		li{
 			width: 29%;
 			height: 29%;
@@ -221,7 +227,7 @@ html,body{
 				-moz-transition: all 0.35s ease-in-out;
 				transition: all 0.35s ease-in-out;
 				h3{
-					font-size: 20px;
+					font-size: 19px;
 					text-transform: uppercase;
 					visibility: hidden;
 					color: #fff;
@@ -257,7 +263,7 @@ html,body{
 			width: 100%;
 			height: 100%;
 			border-radius: 50%;
-			box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.6);
+			box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.6);
 			-webkit-transition: all 0.35s ease-in-out;
 			-moz-transition: all 0.35s ease-in-out;
 			transition: all 0.35s ease-in-out;
@@ -318,7 +324,7 @@ html,body{
 			}
 		}
 		li.ramiro{
-			left: 50px;
+			left: 60px;
 			top: 0;
 			bottom: 0;
 			margin: auto;
@@ -339,7 +345,7 @@ html,body{
 			}
 		}
 		li.sebas{
-			right: 50px;
+			right: 60px;
 			top: 0;
 			bottom: 0;
 			margin: auto;
@@ -376,7 +382,7 @@ html,body{
 
 		li:hover .skill{opacity:1;}
 	}
-	span{
+/*	span{
 		border-top: 2pt solid #eee;
 		display: block;
 		position: relative;
@@ -386,15 +392,14 @@ html,body{
 	}
 	span.reverse{
 		transform: rotate(-45deg);
-	}
+	}*/
 }
-
-
 
 
 #portfolio{
 	height:100%;
 	font-family: Lato;
+	background: #212630;
 	.barra-lateral{
 		background: -webkit-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
 		background: -moz-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
@@ -461,25 +466,35 @@ html,body{
 			}
 		}
 
-		.bg-trabajo.img-1{background:url("portfolio-img1.jpg");}
-		.bg-trabajo.img-2{background:url("portfolio-img2.jpg");}
-		.bg-trabajo.img-3{background:url("portfolio-img3.jpg");}
-		.bg-trabajo.img-4{background:url("portfolio-img4.jpg");}
-		.bg-trabajo.img-5{background:url("portfolio-img5.jpg");}
-		.bg-trabajo.img-6{background:url("portfolio-img6.jpg");}
+		.bg-trabajo.img-01{background:url("portfolio01.jpg");}
+		.bg-trabajo.img-02{background:url("portfolio02.jpg");}
+		.bg-trabajo.img-03{background:url("portfolio03.jpg");}
+		.bg-trabajo.img-04{background:url("portfolio04.jpg");}
+		.bg-trabajo.img-05{background:url("portfolio05.jpg");}
+		.bg-trabajo.img-06{background:url("portfolio06.jpg");}		.bg-trabajo.img-03{background:url("portfolio03.jpg");}
+		.bg-trabajo.img-07{background:url("portfolio07.jpg");}
+		.bg-trabajo.img-08{background:url("portfolio08.jpg");}
+		.bg-trabajo.img-09{background:url("portfolio09.jpg");}
+		.bg-trabajo.img-10{background:url("portfolio10.jpg");}
 
-		.bg-blur.img-1{background:url("portfolio-img1blur.jpg");}
-		.bg-blur.img-2{background:url("portfolio-img2blur.jpg");}
-		.bg-blur.img-3{background:url("portfolio-img3blur.jpg");}
-		.bg-blur.img-4{background:url("portfolio-img4blur.jpg");}
-		.bg-blur.img-5{background:url("portfolio-img5blur.jpg");}
-		.bg-blur.img-6{background:url("portfolio-img6blur.jpg");}
+		.bg-blur.img-01{background:url("portfolio01-blur.jpg");}
+		.bg-blur.img-02{background:url("portfolio02-blur.jpg");}
+		.bg-blur.img-03{background:url("portfolio03-blur.jpg");}
+		.bg-blur.img-04{background:url("portfolio04-blur.jpg");}
+		.bg-blur.img-05{background:url("portfolio05-blur.jpg");}
+		.bg-blur.img-06{background:url("portfolio06-blur.jpg");}
+		.bg-blur.img-07{background:url("portfolio07-blur.jpg");}
+		.bg-blur.img-08{background:url("portfolio08-blur.jpg");}
+		.bg-blur.img-09{background:url("portfolio09-blur.jpg");}
+		.bg-blur.img-10{background:url("portfolio10-blur.jpg");}
+
 		li:hover{
 			.bg-blur{ opacity: 1;}
 			.nombre-trabajo{opacity:1;}
 		}
 	}
 }
+
 
 
 #contacto{
@@ -548,7 +563,7 @@ html,body{
 		text-align: left;
 		padding-left: 45px;
 		width: 260px;
-		height: 465px;
+		height: 459px;
 		margin-top: 70px;
 		position: relative;
 		p{
@@ -585,7 +600,37 @@ html,body{
 }
 
 
+@media only screen and (min-width: 1200px) and (max-width: 1366px){
+	#home .logo-home{
+		padding-top:0;
+		position: absolute;
+		height: 165px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	#quehacemos ul.servicios{
+		position: absolute;
+		height: 255px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		li{
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+	}
 
+}
+
+@media only screen and (min-height: 900px){
+	#equipo ul.nosotros{margin-top: 4%;}
+	#contacto h2{margin-bottom:4%;}
+}
 
 @media only screen and (max-height: 600px) {
 	#equipo ul.nosotros li .info{
