@@ -245,7 +245,7 @@ html,body{
 					font-style: italic;
 					visibility: hidden;
 					color: #BBB;
-					width: 75%;
+					width: 70%;
 					margin: auto;
 					margin-top: 10px;
 					padding-top: 10px;
@@ -382,17 +382,6 @@ html,body{
 
 		li:hover .skill{opacity:1;}
 	}
-/*	span{
-		border-top: 2pt solid #eee;
-		display: block;
-		position: relative;
-		top: -308px;
-		left: 6px;
-		transform: rotate(45deg);
-	}
-	span.reverse{
-		transform: rotate(-45deg);
-	}*/
 }
 
 
@@ -400,11 +389,13 @@ html,body{
 	height:100%;
 	font-family: Lato;
 	background: #212630;
+	overflow: scroll;
+	overflow-y: hidden;
 	.barra-lateral{
-		background: -webkit-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
-		background: -moz-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
-		background: -o-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
-		background: -ms-linear-gradient(left, #212630 1%, rgba(255, 255, 255, 0) 100%);
+		background: -webkit-linear-gradient(left, #000 1%, rgba(255, 255, 255, 0) 100%);
+		background: -moz-linear-gradient(left, #000 1%, rgba(255, 255, 255, 0) 100%);
+		background: -o-linear-gradient(left, #000 1%, rgba(255, 255, 255, 0) 100%);
+		background: -ms-linear-gradient(left, #000 1%, rgba(255, 255, 255, 0) 100%);
 		position: absolute;
 		height: 100%;
 		width: 12%;
@@ -416,11 +407,12 @@ html,body{
 		margin:0;
 		padding:0;
 		height: 100%;
-		width: calc(100%);
+		width: 168%;
 		li{
 			display: inline-block;
 			position:relative;
-			width: 33.3333%;
+			width: 20%;
+			/*width: 33.3333%;*/
 			height: 50%;
 			margin:-1px -2px;
 			.bg-blur{
@@ -459,7 +451,7 @@ html,body{
 					margin:0;
 				}
 				p{
-					font-weight:300;
+					font-weight:400;
 					font-size:18px;
 					margin:0;
 				}
@@ -494,7 +486,6 @@ html,body{
 		}
 	}
 }
-
 
 
 #contacto{
