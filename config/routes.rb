@@ -1,11 +1,24 @@
 Rails.application.routes.draw do
   root 'site#index'
   get 'web' => 'site#web'
+  get 'webmobile' => 'site#webmobile'
   get 'que_hacemos' => 'site#que_hacemos'
   get 'equipo' => 'site#equipo'
   get 'portfolio' => 'site#portfolio'
   get 'contacto' => 'site#contacto'
   post 'contacto' => 'site#new_contact', as: :new_contact
+
+  get 'job_asad' => 'site#job_asad'
+  get 'job_bienal' => 'site#job_bienal'
+  get 'job_comotti' => 'site#job_comotti'
+  get 'job_jpd' => 'site#job_jpd'
+  get 'job_martina' => 'site#job_martina'
+  get 'job_micapinna' => 'site#job_micapinna'
+  get 'job_micocina' => 'site#job_micocina'
+  get 'job_natuveliz' => 'site#job_natuveliz'
+  get 'job_pakua' => 'site#job_pakua'
+  get 'job_tucmusica' => 'site#job_tucmusica'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

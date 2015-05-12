@@ -14,5 +14,9 @@
  *= require onepage-scroll
  *= require set2
  *= require site
+ *= require landing-web
+ *= require mobile
+ *= require swiper.min
+ *= require formeffect
  *= require menu
  */

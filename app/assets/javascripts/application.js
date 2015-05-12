@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.onepage-scroll.min
+//= require swiper.min
 //= require_tree .
 
 var ready;

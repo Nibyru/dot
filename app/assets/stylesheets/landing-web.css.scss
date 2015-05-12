@@ -1,0 +1,357 @@
+#web{
+	height:100%;
+	font-family: 'Roboto', sans-serif;
+
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+		width:85%;
+	}
+}
+
+.menu2{
+	position:fixed;
+	bottom:5%;
+	left: 50%;
+	width:100%;
+	text-align:center;
+	transform: translate(-50%, 0);
+	z-index:1000;
+	font-family: 'Roboto', sans-serif;
+	.item-menu {
+		cursor:pointer;
+		display:inline-block;
+		text-decoration:none;
+		color:#9e9e9e;
+		font-size:20px;
+		text-align:center;
+		padding-left:1.5%;
+		padding-right:1.5%;
+		font-weight:300;
+		a p{margin:0;} 
+		a span {display:none;font-size:42px;}
+		a span.icon-manos {margin-bottom:-4px;font-size:45px;}
+
+	}
+	.item-menu:hover {
+		color:#555;
+		font-weight:300;
+		text-decoration:none;
+	}
+	.item-menu:focus {
+		color:#555;
+		font-weight:300;
+		text-decoration:none;
+	}
+	.item-menu:active {
+		color:#555;
+		font-weight:300;
+		text-decoration:none;
+	}
+	.active p{
+		color:#555;
+		font-weight:300;
+		text-decoration:none;
+	}
+	.item-menu.active a span {
+		display: block;
+		color:#cf4241;
+	}
+
+}
+.onepage-pagination{display:none;}
+
+
+/*---------- PROBLEMA --------------*/
+#problema{
+	.texto{
+		text-align:center;
+		font-size:60px;
+		font-weight:300;
+		color:#9e9e9e;
+		margin-top:25%;
+		b {font-weight:400;}
+	}
+}
+
+
+
+/*---------- SOLUCION --------------*/
+#solucion{
+	padding-top:5%;
+	h1 {
+		font-size:55px;
+		text-align:left;
+		color:#c8403f;
+		font-weight:300;
+		span {font-weight:400;}
+	}
+	p {
+		font-size:20px;
+		line-height:30px;
+		font-weight:300;
+		color:#888;
+		margin-bottom:20px;
+		margin-top:20px;
+		max-width:417px;
+	}
+}
+
+
+
+/*---------- ¿COMO? --------------*/
+
+
+#como{
+	padding-top:5%;
+	h1 {
+		font-size:55px;
+		text-align:center;
+		color:#c8403f;
+		font-weight:300;
+		span {font-weight:400;}
+	}
+	.herramienta {
+		width:45%;
+		height:335px;
+		display:inline-block;
+		float:left;
+		.icono {
+			margin:40px auto;
+			height:124px;
+			width:124px;
+			margin-bottom:15px;
+			background-repeat:no-repeat;
+			background-position:center;
+		}
+		h1 {
+			font-weight:700;
+			font-size:20px;
+			color:#888888;
+			text-align:center;
+		}
+		p {
+			font-weight:300;
+			font-size:20px;
+			color:#888888;
+			margin:0 auto;
+			text-align:center;
+			width:295px;
+		}
+		.web{background:url('web.png');}
+		.social{background:url('social.png');}
+	}
+	.separador {
+		width:10%;
+		height:335px;
+		display:inline-block;
+		float:left;
+		div {
+			margin:0 auto;
+			text-align:center;
+			height:335px;
+			width:1px;
+			border-left:1px dotted #e7e7e7;
+		}
+	}
+	.separador-como {margin-top:60px;}
+}
+
+
+
+/*---------- CONTACTO --------------*/
+#contactoweb{
+	padding-top:5%;
+	h1 {
+		font-size:55px;
+		text-align:center;
+		color:#c8403f;
+		font-weight:300;
+		span {font-weight:400;}
+	}
+	.dot {
+		margin:125px auto;
+		width:100%;
+		text-align:center;
+		a {
+			margin:0 auto;
+			color:#999;
+			font-size:17px;
+			text-align:center;
+			font-weight:300;
+			text-decoration:none;
+			a span {font-weight:400;}
+		}
+		a:hover {
+			color:#c8403f;
+			text-decoration:none;
+		}
+		.logo {
+			margin:0 auto;
+			width:89px;
+			height:36px;
+			margin-bottom:10px;
+			background:url("logo.png") center no-repeat;
+		}
+
+	}
+	.confia {
+		margin:50px auto;
+		width:100%;
+		font-size:13px;
+		color:#888;
+		text-align:center;
+		font-weight:300;
+		margin-bottom:10px;
+		span {font-weight:400;}
+	} 
+	.clientes {
+		list-style:none;
+		margin:0 auto;
+		width:870px;
+		padding-left:0;
+		li {
+			height:59px;
+			text-align:center;
+			float:left;
+			display:inline-block;
+			background-position:center;
+			background-repeat:no-repeat;
+			margin-left:20px;
+			margin-right:20px;
+			transition:All 0.25s ease-in-out;
+		}
+		li:hover{
+			-webkit-filter: brightness(0.8);
+			-moz-filter: brightness(0.8);
+			-o-filter: brightness(0.8);
+			-ms-filter: brightness(0.8);
+		}
+	}
+	.cliente-trailing{
+		background:url('cliente-trailing.png');
+		width: 88px; height: 59px;
+	}
+	.cliente-comotti{
+		background:url('cliente-comotti.png');
+		width: 157px; height: 59px;
+	}
+	.cliente-martina{
+		background:url('cliente-martina.png');
+		width: 167px; height: 59px;
+	}
+	.cliente-deuna{
+		background:url('cliente-deuna.png');
+		width: 96px; height: 59px;
+	}
+	.cliente-bienal{
+		background:url('cliente-bienal.png');
+		width: 119px; height: 59px;
+	}
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+	#problema .texto{
+		font-size:45px;
+		margin-top:25%;
+		font-weight: 300;
+	}
+
+	#solucion h1 {
+		font-size:45px;
+		width:100%;
+	}
+	#solucion p {
+		margin-top:30px;
+		font-size:18px;
+		line-height:28px;
+		margin-bottom:20px;
+	}
+
+	#como h1 {
+		font-size:45px;
+		width:100%;
+	}
+	#como .herramienta p {
+		font-size:15px;
+		line-height:25px;
+		text-align:center;
+		width:250px;
+	}
+	#como .herramienta .icono {
+		height:100px;
+		width:100px;
+		margin-bottom:15px;
+		background-size:cover;
+		margin-top:20px;
+	}
+	#como .separador{height:300px;}
+	#como .separador div {height:300px;}
+	#como .separador-como{margin-top:40px;}
+
+	#contactoweb h1 {
+		font-size:45px;
+		width:100%;
+	}
+	#contactoweb .dot {margin:80px auto;}
+
+	nav .menu2 .item-menu a p{font-size:18px;}
+}
+
+
+@media only screen and (max-width: 1290px) {
+	#problema .texto {
+		font-size:45px;
+		margin-top:25%;
+	}
+
+	#solucion h1 {
+		font-size:45px;
+		width:100%;
+		margin-top:1.5%;
+	}
+	#solucion p {
+		margin-top:30px;
+		font-size:18px;
+		line-height:28px;
+		margin-bottom:20px;
+	}
+
+	#como h1 {
+		font-size:45px;
+		width:100%;
+		margin-top:1.5%;
+	}
+	#como .herramienta p {
+		font-size:15px;
+		line-height:25px;
+		text-align:center;
+		width:250px;
+	}
+	#como .herramienta .icono {
+		height:100px;
+		width:100px;
+		margin-bottom:15px;
+		background-size:cover;
+		margin-top:30px;
+	}
+	#como .herramienta h1{font-size:18px;}
+	#como .separador {height:150px;}
+	#como .separador div {height:280px;}
+	#como .separador-como {margin-top:20px;}
+
+	#contactoweb h1 {
+		font-size:45px;
+		width:100%;
+		margin-top:1.5%;
+	}
+	#contactoweb .dot {margin:70px auto;}
+	#contactoweb .confia {margin:10px auto;}
+
+
+	nav .menu2 .item-menu a p{font-size:15px;}
+	nav .menu2 .item-menu a span {font-size:30px;}
+	nav .menu2 .item-menu a span.icon-manos {font-size:33px;}
+}
