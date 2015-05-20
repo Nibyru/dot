@@ -1,8 +1,6 @@
 class SiteController < ApplicationController
 
   layout 'landing', only: :web
-
-  layout 'mobile', only: :webmobile
   
   def index
     @contact = Contact.new()
