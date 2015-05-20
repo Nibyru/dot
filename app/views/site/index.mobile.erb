@@ -1,222 +1,250 @@
-<div class="swiper-container"> <!-- FIN SWIPER-CONTAINER -->
-  <div class="swiper-wrapper"> <!-- SWIPER-WRAPPER -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic|Ubuntu:300,400|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href=<%= asset_path("favicon.ico")%> rel="shortcut icon">
+
+</head>
 
 
-    <div class="swiper-slide"><!-- HOME -->
-      <div class="home-mobile">
-        <div class="logo"></div>
-        <div class="texto">en el punto <span>termina la ciencia</span> y <span>comienza la imaginación</span></div>
+  <body>
+    
 
-        <div class="mover"><span class="icon-slideder"></span></div>
-      </div>
-    </div><!-- FIN HOME -->
+    <div class="swiper-container"> <!-- FIN SWIPER-CONTAINER -->
+      <div class="swiper-wrapper"> <!-- SWIPER-WRAPPER -->
 
 
-    <div class="swiper-slide"><!-- QUE HACEMOS -->
-      <div class="hacemos-mobile">
+        <div class="swiper-slide"><!-- HOME -->
+          <div class="home-mobile">
+            <div class="logo"></div>
+            <div class="texto">en el punto <span>termina la ciencia</span> y <span>comienza la imaginación</span></div>
 
-        <h1>NUESTRO <b>TRABAJO</b></h1>
-
-        <div class="trabajo">
-          <div class="icono icono-diseño"></div>
-          <h2>DISEÑO <b>GRÁFICO</b></h2>
-          <p>Soluciones a problemas de comunicación de su empresa</p>
-        </div>
-
-        <div class="divisorv"><div></div></div>
-        <div class=" divisor"></div>
-
-        <div class="trabajo">
-          <div class="icono icono-web"></div>
-          <h2>DESARROLLO <b>WEB</b></h2>
-          <p>Creamos sitios web que funcionan de verdad</p>
-        </div>
-
-        <div class="divisorv"><div></div></div>
-        <div class=" divisor"></div>
-
-        <div class="trabajo">
-          <div class="icono icono-branding"></div>
-          <h2><b>BRANDING</b></h2>
-          <p>Una imagen institucional que identifique y represente</p>
-        </div>
-
-        <ul class="iconos-quehacemos">
-          <li><%= image_tag("skill_adobe-gris.png") %></li>
-          <li><%= image_tag("skill_html-gris.png") %></li>
-          <li><%= image_tag("skill_css-gris.png") %></li>
-          <li><%= image_tag("skill_javascript-gris.png") %></li>
-          <li><%= image_tag("skill_bootstrap-gris.png") %></li>
-          <li><%= image_tag("skill_ruby-gris.png") %></li>
-          <li><%= image_tag("skill_rails-gris.png") %></li>
-          <li><%= image_tag("skill_github-gris.png") %></li>
-        </ul>
-      </div>
-    </div><!-- FIN QUE HACEMOS -->
-
-
-    <div class="swiper-slide"><!-- NOSOTROS -->
-      <div class="nosotros-mobile">
-
-        <h1>NUESTRO <b>EQUIPO</b></h1>
-
-        <div class="integrante"><!-- Integrante -->
-          <div class="foto foto-adrian"></div>
-          <div class="nombre">ADRIÁN</div> 
-          <div class="hab">diseño</div>
-          <ul class="skill">
-            <li><%= image_tag("skill_ps.png") %></li>
-            <li><%= image_tag("skill_ai.png") %></li>
-            <li><%= image_tag("skill_id.png") %></li>
-          </ul>
-        </div><!-- Fin Integrante -->
-
-        <div class="separador"></div>
-
-        <div class="integrante"><!-- Integrante -->
-          <div class="foto foto-sebas"></div>
-          <div class="nombre">SEBASTIÁN</div> 
-          <div class="hab">desarrollo</div>
-          <ul class="skill">
-            <li><%= image_tag("skill_html.png") %></li>
-            <li><%= image_tag("skill_css.png") %></li>
-            <li><%= image_tag("skill_rails.png") %></li>
-          </ul>
-        </div><!-- Fin Integrante -->
-
-        <div class="separador"></div>
-
-        <div class="integrante"><!-- Integrante -->
-          <div class="foto foto-ramiro"></div>
-          <div class="nombre">RAMIRO</div> 
-          <div class="hab">desarrollo</div>
-          <ul class="skill">
-            <li><%= image_tag("skill_javascript.png") %></li>
-            <li><%= image_tag("skill_html.png") %></li>
-            <li><%= image_tag("skill_css.png") %></li>
-          </ul>
-        </div><!-- Fin Integrante -->
-
-        <div class="separador"></div>
-
-        <div class="integrante"><!-- Integrante -->
-          <div class="foto foto-maxi"></div>
-          <div class="nombre">MAXI</div> 
-          <div class="hab">diseño</div>
-          <ul class="skill">
-            <li><%= image_tag("skill_ps.png") %></li>
-            <li><%= image_tag("skill_ai.png") %></li>
-            <li><%= image_tag("skill_dw.png") %></li>
-          </ul>
-        </div><!-- Fin Integrante -->
-
-      </div>    
-    </div><!-- FIN NOSOTROS -->
-
-
-
-    <div class="swiper-slide"><!-- PORTFOLIO -->
-      <div class="portfolio-mobile">
-
-        <%= link_to (job_pakua_path) do %>
-          <div class="job job-pakua" target="_self"></div>
-        <% end %>
-        <%= link_to (job_asad_path) do %>
-          <div class="job job-asad" target="_self"></div>
-        <% end %>
-        <%= link_to (job_jpd_path) do %>
-          <div class="job job-jpd" target="_self"></div>
-        <% end %>
-        <%= link_to (job_bienal_path) do %>
-          <div class="job job-bienal" target="_self"></div>
-        <% end %>
-        <%= link_to (job_tucmusica_path) do %>
-          <div class="job job-tucmusica" target="_self"></div>
-        <% end %>
-        <%= link_to (job_micapinna_path) do %>
-          <div class="job job-micapinna" target="_self"></div>
-        <% end %>
-        <%= link_to (job_comotti_path) do %>
-          <div class="job job-comotti" target="_self"></div>
-        <% end %>
-        <%= link_to (job_micocina_path) do %>
-          <div class="job job-micocina" target="_self"></div>
-        <% end %>
-        <%= link_to (job_martina_path) do %>
-          <div class="job job-martina" target="_self"></div>
-        <% end %>
-        <%= link_to (job_natuveliz_path) do %>
-          <div class="job job-natuveliz" target="_self"></div>
-        <% end %>
-
-      </div>
-    </div><!-- FIN PORTFOLIO -->
-
-
-    <div class="swiper-slide"><!-- CONTACTO -->
-      <div class="contacto-mobile">
-
-        <h1>CONTÁCTANOS</h1>
-
-        <div class="datosoff">
-          <p><a href="tel:+5493815505366">+54 9 381 <b>5 505 366</b></a></p>
-          <p><a href="tel:+5493816684873">+54 9 381 <b>6 684 873</b></a></p>
-          <p><b>dotestudiografico</b>@gmail.com</p>
-          <p>T4000ILC | <b>Tucumán</b> | Argentina</p>
-          <p>Lun. a Vie. | de 9 a 18hs</p>
-
-          <div class="sociales">
-            <a href="https://www.facebook.com/dotestudiografico" target="_blank" class="icon-Facebook"></a>
-            <a href="https://twitter.com/DotEstudio" target="_blank" class="icon-Twitter"></a>
-            <a href="https://plus.google.com/u/0/108446735307854859996/posts" target="_blank" class="icon-Google"></a>
-            <a href="https://www.behance.net/DotEstudio" target="_blank" class="icon-Behance"></a>
-            <a href="#" class="icon-Skype"></a>
+            <div class="mover"><span class="icon-slideder"></span></div>
           </div>
-        </div>
+        </div><!-- FIN HOME -->
 
-        <form class="formu">
-          <span class="input input--isao">
-          <input class="input__field input__field--isao" type="text" id="input-1" />
-          <label class="input__label input__label--isao" for="input-38" data-content="Nombre">
-          <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Nombre</span>
-          </label>
-          </span>
 
-          <span class="input input--isao">
-            <input class="input__field input__field--isao" type="text" id="input-2" />
-            <label class="input__label input__label--isao" for="input-39" data-content="Mail">
-              <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Mail</span>
-            </label>
-          </span>
+        <div class="swiper-slide"><!-- QUE HACEMOS -->
+          <div class="hacemos-mobile">
 
-          <span class="input input--isao">
-            <input class="input__field input__field--isao" type="text" id="input-3" />
-            <label class="input__label input__label--isao" for="input-40" data-content="Telefono">
-              <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Telefono</span>
-            </label>
-          </span>
+            <h1>NUESTRO <b>TRABAJO</b></h1>
 
-          <span class="input input--isao">
-            <input class="input__field input__field--isao" type="text" id="input-4" />
-            <label class="input__label input__label--isao" for="input-40" data-content="País">
-              <span class="input__label-content input__label-content--isao" style="margin-top:3px;">País</span>
-            </label>
-          </span>
+            <div class="trabajo">
+              <div class="icono icono-diseño"></div>
+              <h2>DISEÑO <b>GRÁFICO</b></h2>
+              <p>Soluciones a problemas de comunicación de su empresa</p>
+            </div>
 
-          <span class="input input--isao">
-            <textarea class="input__field input__field--isao" rows="7" id="input-4" style="resize: none;"></textarea>
-            <label class="input__label input__label--isao" for="input-40" data-content="Mensaje">
-              <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Mensaje</span>
-            </label>
-          </span>
+            <div class="divisorv"><div></div></div>
+            <div class=" divisor"></div>
 
-          <div class="env">
-            <input class="btn" type="submit" value="ENVIAR" />
+            <div class="trabajo">
+              <div class="icono icono-web"></div>
+              <h2>DESARROLLO <b>WEB</b></h2>
+              <p>Creamos sitios web que funcionan de verdad</p>
+            </div>
+
+            <div class="divisorv"><div></div></div>
+            <div class=" divisor"></div>
+
+            <div class="trabajo">
+              <div class="icono icono-branding"></div>
+              <h2><b>BRANDING</b></h2>
+              <p>Una imagen institucional que identifique y represente</p>
+            </div>
+
+            <ul class="iconos-quehacemos">
+              <li><%= image_tag("skill_adobe-gris.png") %></li>
+              <li><%= image_tag("skill_html-gris.png") %></li>
+              <li><%= image_tag("skill_css-gris.png") %></li>
+              <li><%= image_tag("skill_javascript-gris.png") %></li>
+              <li><%= image_tag("skill_bootstrap-gris.png") %></li>
+              <li><%= image_tag("skill_ruby-gris.png") %></li>
+              <li><%= image_tag("skill_rails-gris.png") %></li>
+              <li><%= image_tag("skill_github-gris.png") %></li>
+            </ul>
           </div>
-        </form>
+        </div><!-- FIN QUE HACEMOS -->
 
-      </div>            
-    </div><!-- FIN CONTACTO -->
 
-  </div> <!-- FIN SWIPER-WRAPPER -->
-</div> <!-- FIN SWIPER-CONTAINER  -->
+        <div class="swiper-slide"><!-- NOSOTROS -->
+          <div class="nosotros-mobile">
+
+            <h1>NUESTRO <b>EQUIPO</b></h1>
+
+            <div class="integrante"><!-- Integrante -->
+              <div class="foto foto-adrian"></div>
+              <div class="nombre">ADRIÁN</div> 
+              <div class="hab">diseño</div>
+              <ul class="skill">
+                <li><%= image_tag("skill_ps.png") %></li>
+                <li><%= image_tag("skill_ai.png") %></li>
+                <li><%= image_tag("skill_id.png") %></li>
+              </ul>
+            </div><!-- Fin Integrante -->
+
+            <div class="separador"></div>
+
+            <div class="integrante"><!-- Integrante -->
+              <div class="foto foto-sebas"></div>
+              <div class="nombre">SEBASTIÁN</div> 
+              <div class="hab">desarrollo</div>
+              <ul class="skill">
+                <li><%= image_tag("skill_html.png") %></li>
+                <li><%= image_tag("skill_css.png") %></li>
+                <li><%= image_tag("skill_rails.png") %></li>
+              </ul>
+            </div><!-- Fin Integrante -->
+
+            <div class="separador"></div>
+
+            <div class="integrante"><!-- Integrante -->
+              <div class="foto foto-ramiro"></div>
+              <div class="nombre">RAMIRO</div> 
+              <div class="hab">desarrollo</div>
+              <ul class="skill">
+                <li><%= image_tag("skill_javascript.png") %></li>
+                <li><%= image_tag("skill_html.png") %></li>
+                <li><%= image_tag("skill_css.png") %></li>
+              </ul>
+            </div><!-- Fin Integrante -->
+
+            <div class="separador"></div>
+
+            <div class="integrante"><!-- Integrante -->
+              <div class="foto foto-maxi"></div>
+              <div class="nombre">MAXI</div> 
+              <div class="hab">diseño</div>
+              <ul class="skill">
+                <li><%= image_tag("skill_ps.png") %></li>
+                <li><%= image_tag("skill_ai.png") %></li>
+                <li><%= image_tag("skill_dw.png") %></li>
+              </ul>
+            </div><!-- Fin Integrante -->
+
+          </div>    
+        </div><!-- FIN NOSOTROS -->
+
+
+
+        <div class="swiper-slide"><!-- PORTFOLIO -->
+          <div class="portfolio-mobile">
+
+            <%= link_to (job_pakua_path) do %>
+              <div class="job job-pakua" target="_self"></div>
+            <% end %>
+            <%= link_to (job_asad_path) do %>
+              <div class="job job-asad" target="_self"></div>
+            <% end %>
+            <%= link_to (job_jpd_path) do %>
+              <div class="job job-jpd" target="_self"></div>
+            <% end %>
+            <%= link_to (job_bienal_path) do %>
+              <div class="job job-bienal" target="_self"></div>
+            <% end %>
+            <%= link_to (job_tucmusica_path) do %>
+              <div class="job job-tucmusica" target="_self"></div>
+            <% end %>
+            <%= link_to (job_micapinna_path) do %>
+              <div class="job job-micapinna" target="_self"></div>
+            <% end %>
+            <%= link_to (job_comotti_path) do %>
+              <div class="job job-comotti" target="_self"></div>
+            <% end %>
+            <%= link_to (job_micocina_path) do %>
+              <div class="job job-micocina" target="_self"></div>
+            <% end %>
+            <%= link_to (job_martina_path) do %>
+              <div class="job job-martina" target="_self"></div>
+            <% end %>
+            <%= link_to (job_natuveliz_path) do %>
+              <div class="job job-natuveliz" target="_self"></div>
+            <% end %>
+
+          </div>
+        </div><!-- FIN PORTFOLIO -->
+
+
+        <div class="swiper-slide"><!-- CONTACTO -->
+          <div class="contacto-mobile">
+
+            <h1>CONTÁCTANOS</h1>
+
+            <div class="datosoff">
+              <p><a href="tel:+5493815505366">+54 9 381 <b>5 505 366</b></a></p>
+              <p><a href="tel:+5493816684873">+54 9 381 <b>6 684 873</b></a></p>
+              <p><b>dotestudiografico</b>@gmail.com</p>
+              <p>T4000ILC | <b>Tucumán</b> | Argentina</p>
+              <p>Lun. a Vie. | de 9 a 18hs</p>
+
+              <div class="sociales">
+                <a href="https://www.facebook.com/dotestudiografico" target="_blank" class="icon-Facebook"></a>
+                <a href="https://twitter.com/DotEstudio" target="_blank" class="icon-Twitter"></a>
+                <a href="https://plus.google.com/u/0/108446735307854859996/posts" target="_blank" class="icon-Google"></a>
+                <a href="https://www.behance.net/DotEstudio" target="_blank" class="icon-Behance"></a>
+                <a href="#" class="icon-Skype"></a>
+              </div>
+            </div>
+
+            <form class="formu">
+              <span class="input input--isao">
+              <input class="input__field input__field--isao" type="text" id="input-1" />
+              <label class="input__label input__label--isao" for="input-38" data-content="Nombre">
+              <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Nombre</span>
+              </label>
+              </span>
+
+              <span class="input input--isao">
+                <input class="input__field input__field--isao" type="text" id="input-2" />
+                <label class="input__label input__label--isao" for="input-39" data-content="Mail">
+                  <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Mail</span>
+                </label>
+              </span>
+
+              <span class="input input--isao">
+                <input class="input__field input__field--isao" type="text" id="input-3" />
+                <label class="input__label input__label--isao" for="input-40" data-content="Telefono">
+                  <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Telefono</span>
+                </label>
+              </span>
+
+              <span class="input input--isao">
+                <input class="input__field input__field--isao" type="text" id="input-4" />
+                <label class="input__label input__label--isao" for="input-40" data-content="País">
+                  <span class="input__label-content input__label-content--isao" style="margin-top:3px;">País</span>
+                </label>
+              </span>
+
+              <span class="input input--isao">
+                <textarea class="input__field input__field--isao" rows="7" id="input-4" style="resize: none;"></textarea>
+                <label class="input__label input__label--isao" for="input-40" data-content="Mensaje">
+                  <span class="input__label-content input__label-content--isao" style="margin-top:3px;">Mensaje</span>
+                </label>
+              </span>
+
+              <div class="env">
+                <input class="btn" type="submit" value="ENVIAR" />
+              </div>
+            </form>
+
+          </div>            
+        </div><!-- FIN CONTACTO -->
+
+      </div> <!-- FIN SWIPER-WRAPPER -->
+    </div> <!-- FIN SWIPER-CONTAINER  -->
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+          paginationClickable: true
+      });
+    </script>
+  </body>
+
+  
+</html>
+
