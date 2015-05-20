@@ -26,16 +26,13 @@
 
 </head>
 
-  <% if is_mobile_device? %>
-    <%= render partial: 'site/webmobile' %>
-  <% else %>
-    <body class="red-bg">
-    <%= render partial: 'shared/menu' %>
-    <div class="main">
-      <%= yield %>
-    </div>
-    </body>
-  <% end %>
+
+  <body class="red-bg">
+  <%= render partial: 'shared/menu' %>
+  <div class="main">
+    <%= yield %>
+  </div>
+  </body>
 
   
 </html>
