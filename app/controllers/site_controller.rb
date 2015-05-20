@@ -4,7 +4,6 @@ class SiteController < ApplicationController
 
   layout 'without_menu', except: [:index, :web]
 
-  before_filter :check_mobile_device
   
   def index
     @contact = Contact.new()
@@ -36,10 +35,6 @@ class SiteController < ApplicationController
   end
 
 private
-
-  def check_mobile_device
-    true if is_mobile_device?
-  end
 
   def contact_params
     params.require(:contact).permit(:nombre, :email, :tel, :address, :body)
