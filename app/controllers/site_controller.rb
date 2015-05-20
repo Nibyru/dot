@@ -53,7 +53,7 @@ class SiteController < ApplicationController
 private
 
   def check_mobile_device
-    layout 'mobile' if is_mobile_device?
+    true if is_mobile_device?
   end
 
   def contact_params
