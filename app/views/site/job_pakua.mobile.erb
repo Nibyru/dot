@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <META name="robots" content="index,follow">
+  <META name="keywords" content="tucuman,argentina,mundo,mundial,network,comunicacion,internet,diseño,grafico,web,desarrollo,facebook,twitter,redes,sociales,programacion,branding,identidad,visual,negocio">
+  <meta name="google-site-verification" content="Q5iW3BtIreImd7rzekaGoN_ysggcpcPaRN51ewUGDOc" />
+  <meta property="og:title" content="Dot estudio"/>
+  <meta property="og:url" content="http://dotestudiografico.com/"/>
+  <meta property="og:image" content="<% image_tag('dot-img.png') %>"/>
+  <meta property="og:site_name" content="Dot estudio"/>
+  <meta property="og:description" content="DOT es un estudio gráfico dedicado a la comunicación a través de la imagen. Nos especializamos tanto en gráfica como en pantallas."/>
+  <meta property="og:type" content="website" />
+  
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic|Ubuntu:300,400|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href=<%= asset_path("favicon.ico")%> rel="shortcut icon">
+
+</head>
+
+
+  <body>
+    
+    <div class="swiper-container"><!-- INFO -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+          <div class="info">
+
+            <div class="portada job-pakua">
+              <div class="degradado"></div>
+            </div>
+
+            <div class="head">
+              <h1>Pakua</h1>
+              <h3>folletería institucional</h3>
+            </div>
+
+            <div class="contenido">
+              <p>Rediseño completo de folletería institucional y comercial para PAKUA · Escuela de Ciencias y Conocimientos Orientales </p>
+            </div>
+
+            <div class="share">
+              <h3>COMPARTIR ESTE TRABAJO</h3>
+              <a href="#" class="icon-facebookcircular"></a>
+              <a href="#" class="icon-twittercircular"></a>
+              <a href="#" class="icon-googlecircular"></a>
+            </div>
+
+            <div class="prevnext">
+              <%= link_to (job_natuveliz_path), target:"_self" do %>
+                <div class="prev"><div><span class="icon-prev"></span></div>PREVIO</div>
+              <% end %>
+              <%= link_to (webmobile_path), class: 'jobs' do %>
+                <div><span class="icon-portfoliomobile"></span></div>PORTFOLIO
+              <% end %>
+              <%= link_to (job_asad_path), target:"_self" do %>
+                <div class="next"><div><span class="icon-next"></span></div>SIGUIENTE</div>
+              <% end %>
+            </div>
+
+            <div class="imagenes"><!-- IMAGENES -->
+              <%= image_tag("job-pakua-1.png") %>
+              <%= image_tag("job-pakua-2.png") %>
+              <%= image_tag("job-pakua-3.png") %>
+            </div><!-- FIN IMAGENES -->
+
+            <div class="prevnext">
+              <%= link_to (job_natuveliz_path), target:"_self" do %>
+                <div class="prev"><div><span class="icon-prev"></span></div>PREVIO</div>
+              <% end %>
+              <%= link_to (webmobile_path), class: 'jobs' do %>
+                <div><span class="icon-portfoliomobile"></span></div>PORTFOLIO
+              <% end %>
+              <%= link_to (job_asad_path), target:"_self" do %>
+                <div class="next"><div><span class="icon-next"></span></div>SIGUIENTE</div>
+              <% end %>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- INFO -->
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+          paginationClickable: true
+      });
+    </script>
+  </body>
+
+  
+</html>
+
